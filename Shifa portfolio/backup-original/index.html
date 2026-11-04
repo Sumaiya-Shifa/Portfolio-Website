@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumaiya Fahmida Shifa | Portfolio</title>
+  <meta name="description" content="Portfolio of Sumaiya Fahmida Shifa, Computer Science & Engineering student at AIUB. Showcasing projects, posters, skills, education and contact details.">
+  <meta name="author" content="Sumaiya Fahmida Shifa">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Early Theme Detection: Default is always Light theme -->
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        document.documentElement.removeAttribute("data-theme");
+      }
+    } catch(e) {}
+  </script>
+</head>
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header" id="header">
+    <a href="#about" class="logo">Shifa<span>.</span></a>
+    
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- About / Hero Section -->
+    <section id="about" class="section about">
+      <div class="container about-container">
+        <div class="about-hero">
+          <div class="profile-image-container">
+            <div class="profile-glow"></div>
+            <img src="profile.jpg" alt="Sumaiya Fahmida Shifa" class="profile-pic" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="profile-placeholder" style="display: none;">
+              <i class="fas fa-user-circle"></i>
+            </div>
+          </div>
+          
+          <div class="about-text">
+            <div class="pre-heading">
+              <span class="status-badge"><span class="badge-dot"></span> Available for Projects &amp; Internships</span>
+            </div>
+            <h1>Hello, I'm <span class="highlight">Sumaiya Fahmida Shifa</span> 👋</h1>
+            <p class="role-title"><i class="fas fa-graduation-cap"></i> CSE Graduate | Full Stack Developer &amp; SQA Engineer</p>
+            
+            <div class="bio-quote">
+              "A Computer Science &amp; Engineering graduate with a strong foundation in full stack web development, software quality assurance, and problem solving with C++. I bring dedication and a rapid learning mindset to every project — turning complex challenges into clean, efficient, and scalable solutions."
+            </div>
+            
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary"><i class="fas fa-briefcase"></i> View Projects</a>
+              <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Academic Journey &amp; Background</p>
+        </div>
+        
+        <div class="education-timeline">
+          <div class="education-item">
+            <div class="education-icon"><i class="fas fa-university"></i></div>
+            <div class="education-content">
+              <h3>American International University-Bangladesh (AIUB)</h3>
+              <p class="education-duration"><i class="far fa-calendar-alt"></i> 2023 - Present</p>
+              <p class="education-details">Bachelor of Science in Computer Science &amp; Engineering</p>
+              <p class="education-status"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh · CGPA 3.50</p>
+            </div>
+          </div>
+          
+          <div class="education-item">
+            <div class="education-icon"><i class="fas fa-school"></i></div>
+            <div class="education-content">
+              <h3>Shahid Police Smriti College</h3>
+              <p class="education-duration"><i class="far fa-calendar-alt"></i> 2019 - 2021</p>
+              <p class="education-details">Higher Secondary Certificate (HSC) — Science</p>
+              <p class="education-status"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh · GPA 5.00/5.00</p>
+            </div>
+          </div>
+          
+          <div class="education-item">
+            <div class="education-icon"><i class="fas fa-book-reader"></i></div>
+            <div class="education-content">
+              <h3>Bangladesh BN School</h3>
+              <p class="education-duration"><i class="far fa-calendar-alt"></i> 2014 - 2018</p>
+              <p class="education-details">Secondary School Certificate (SSC) — Science</p>
+              <p class="education-status"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh · GPA 5.00/5.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Skills &amp; Tech Stack</h2>
+          <p class="section-subtitle">Languages, Databases, Frameworks &amp; Core Competencies</p>
+        </div>
+        
+        <!-- Programming Languages Category -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
+              <h3>C++</h3>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-java"></i></div>
+              <h3>Java</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+              <h3>C# / .NET</h3>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+              <h3>JavaScript</h3>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+              <h3>TypeScript</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-php"></i></div>
+              <h3>PHP</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <h3>SQL</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Computer Science & Fundamentals Category -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fas fa-brain"></i> Core Computer Science &amp; Algorithms</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+              <h3>Data Structures &amp; Algorithms</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+              <h3>Object-Oriented Programming</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-cube"></i></div>
+              <h3>OpenGL &amp; 3D Graphics</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+              <h3>Systems Integration</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks & Core Concepts Category -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fas fa-layer-group"></i> Frameworks &amp; Core Competencies</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-react"></i></div>
+              <h3>React</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+              <h3>Vue.js</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+              <h3>Node.js</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+              <h3>Bootstrap</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-wind"></i></div>
+              <h3>Tailwind CSS</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Web Development</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Systems Category -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fas fa-server"></i> Databases &amp; Infrastructure</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <h3>Oracle Database</h3>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-table"></i></div>
+              <h3>MySQL</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-hard-drive"></i></div>
+              <h3>MS SQL Server</h3>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+              <h3>Apache</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Software Development Work &amp; Academic Showcases</p>
+        </div>
+
+        <!-- Development Projects Subsection -->
+        <div class="activity-subsection dev-projects-section">
+          <div class="activity-subtitle-group">
+            <h3><i class="fas fa-code"></i> Development Projects</h3>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+              <i class="fas fa-border-all"></i> All Projects
+            </button>
+            <button class="filter-btn" data-filter="csharp">
+              <i class="fab fa-microsoft"></i> C# / .NET
+            </button>
+            <button class="filter-btn" data-filter="oop">
+              <i class="fas fa-cubes"></i> OOP Projects
+            </button>
+            <button class="filter-btn" data-filter="cpp">
+              <i class="fab fa-cuttlefish"></i> C++ / OpenGL
+            </button>
+            <button class="filter-btn" data-filter="web">
+              <i class="fas fa-globe"></i> Web Dev
+            </button>
+          </div>
+
+          <!-- Project Grid -->
+          <div class="project-grid" id="project-grid">
+
+            <!-- 1. Needy Nest (C# / .NET Project) -->
+            <div class="project-card" data-category="csharp">
+              <div class="project-img-holder">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-hands-holding-child project-preview-icon"></i>
+                  <span>Needy Nest Project</span>
+                </div>
+              </div>
+              <div class="project-card-header">
+                <span class="project-category"><i class="fab fa-microsoft"></i> C# / .NET</span>
+                <span class="project-status">Social Impact</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Needy Nest</h3>
+                <p class="project-description">
+                  A dedicated community support and assistance management system built with C# and .NET. Streamlines donation workflows, resource allocation, and request tracking for humanitarian assistance.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">C#</span>
+                  <span class="tag">.NET Framework</span>
+                  <span class="tag">Database</span>
+                  <span class="tag">Social App</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="btn btn-card-primary"><i class="fas fa-external-link-alt"></i> View Project</a>
+                <a href="#" class="btn btn-card-ghost"><i class="fab fa-github"></i> Repository</a>
+              </div>
+            </div>
+
+            <!-- 2. Supershop Management System (OOP Project) -->
+            <div class="project-card" data-category="oop">
+              <div class="project-img-holder">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-store project-preview-icon"></i>
+                  <span>Supershop Management</span>
+                </div>
+              </div>
+              <div class="project-card-header">
+                <span class="project-category"><i class="fas fa-cubes"></i> OOP / Systems</span>
+                <span class="project-status">Enterprise POS</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Supershop Management System</h3>
+                <p class="project-description">
+                  An Object-Oriented Programming (OOP) system for managing superstore inventory, cashier Point-of-Sale (POS) transactions, product cataloging, and automated sales reporting.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">OOP Architecture</span>
+                  <span class="tag">C# / Java</span>
+                  <span class="tag">POS System</span>
+                  <span class="tag">SQL Database</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="btn btn-card-primary"><i class="fas fa-external-link-alt"></i> View System</a>
+                <a href="#" class="btn btn-card-ghost"><i class="fab fa-github"></i> Repository</a>
+              </div>
+            </div>
+
+            <!-- 3. OpenGL 3D Graphics Project (C++) -->
+            <div class="project-card" data-category="cpp">
+              <div class="project-img-holder">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-cube project-preview-icon"></i>
+                  <span>OpenGL 3D Graphics</span>
+                </div>
+              </div>
+              <div class="project-card-header">
+                <span class="project-category"><i class="fab fa-cuttlefish"></i> C++ / Graphics</span>
+                <span class="project-status">3D Systems</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">OpenGL 3D Graphics Projects</h3>
+                <p class="project-description">
+                  Low-level 3D graphics rendering application built in C++ using OpenGL shaders. Implements 3D geometry transformations, lighting models, camera control, and custom mesh rendering pipelines.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">C++</span>
+                  <span class="tag">OpenGL</span>
+                  <span class="tag">GLSL Shaders</span>
+                  <span class="tag">3D Rendering</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="btn btn-card-primary"><i class="fas fa-external-link-alt"></i> View Graphics</a>
+                <a href="#" class="btn btn-card-ghost"><i class="fab fa-github"></i> Repository</a>
+              </div>
+            </div>
+
+            <!-- 4. Personal Portfolio Website -->
+            <div class="project-card" data-category="web">
+              <div class="project-img-holder">
+                <div class="project-img-placeholder">
+                  <i class="fas fa-laptop-code project-preview-icon"></i>
+                  <span>Portfolio Website</span>
+                </div>
+              </div>
+              <div class="project-card-header">
+                <span class="project-category"><i class="fas fa-code"></i> Web Development</span>
+                <span class="project-status">Live Site</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-description">
+                  A modern, responsive personal portfolio built with HTML5, CSS3 (Glassmorphism &amp; Flex/Grid), and Vanilla JavaScript. Features dynamic theme switching and filterable showcase sections.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Responsive</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="https://sumaiya-shifa.github.io/Sumaiya-Shifa/" target="_blank" rel="noopener" class="btn btn-card-primary"><i class="fas fa-globe"></i> Live Demo</a>
+                <a href="#" class="btn btn-card-ghost"><i class="fab fa-github"></i> Repository</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Poster Presentations Subsection -->
+        <div class="activity-subsection" id="posters">
+          <div class="activity-subtitle-group">
+            <h3><i class="fas fa-chalkboard-teacher"></i> Poster Presentations</h3>
+          </div>
+
+          <div class="poster-grid">
+
+            <!-- Poster 1: Curiosity to Career -->
+            <div class="poster-card glass-crystal-card">
+              <div class="poster-img-container crystal-frame">
+                <div class="crystal-sheen"></div>
+                <div class="poster-badge"><i class="fas fa-award"></i> Featured Poster</div>
+                <img src="posters/cs-poster.png" alt="Curiosity to Career Poster Screenshot" class="poster-screenshot" loading="lazy">
+              </div>
+              <div class="poster-body">
+                <h3 class="poster-title">Curiosity to Career</h3>
+                <p class="poster-desc">
+                  An insightful poster and conceptual presentation exploring the step-by-step transition from foundational academic curiosity into a professional software engineering career.
+                </p>
+                <div class="poster-tags">
+                  <span class="tag">Career Pathways</span>
+                  <span class="tag">Presentation</span>
+                  <span class="tag">CS &amp; STEM</span>
+                </div>
+                <div class="poster-actions">
+                  <a href="posters/cs-poster.pdf" target="_blank" rel="noopener" class="btn btn-card-primary"><i class="fas fa-eye"></i> View Full PDF</a>
+                  <a href="posters/cs-poster.pdf" download="cs-poster.pdf" class="btn btn-card-ghost"><i class="fas fa-download"></i> Download</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poster 2: Nikola Tesla -->
+            <div class="poster-card glass-crystal-card">
+              <div class="poster-img-container crystal-frame">
+                <div class="crystal-sheen"></div>
+                <div class="poster-badge"><i class="fas fa-bolt"></i> Physics Innovation</div>
+                <img src="posters/physics-poster.png" alt="Nikola Tesla Poster Screenshot" class="poster-screenshot" loading="lazy">
+              </div>
+              <div class="poster-body">
+                <h3 class="poster-title">Nikola Tesla: Visionary of Modern Electricity</h3>
+                <p class="poster-desc">
+                  A detailed physics research poster focusing on Nikola Tesla's groundbreaking inventions, alternating current (AC) power systems, magnetic field principles, and wireless energy transmission.
+                </p>
+                <div class="poster-tags">
+                  <span class="tag">Physics</span>
+                  <span class="tag">Electromagnetism</span>
+                  <span class="tag">Innovation</span>
+                </div>
+                <div class="poster-actions">
+                  <a href="posters/physics-poster.pdf" target="_blank" rel="noopener" class="btn btn-card-primary"><i class="fas fa-eye"></i> View Full PDF</a>
+                  <a href="posters/physics-poster.pdf" download="physics-poster.pdf" class="btn btn-card-ghost"><i class="fas fa-download"></i> Download</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Feel free to reach out via email or send a message below</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Email Address</h4>
+                <p><a href="mailto:famidasumaiya765@gmail.com">famidasumaiya765@gmail.com</a></p>
+              </div>
+              <button class="copy-btn" data-copy="famidasumaiya765@gmail.com" title="Copy Email">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Dhaka, Bangladesh</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fas fa-globe"></i></div>
+              <div class="contact-details">
+                <h4>Social Links</h4>
+                <div class="social-links-row">
+                  <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                  <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name"><i class="far fa-user"></i> Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="email"><i class="far fa-envelope"></i> Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="message"><i class="far fa-comment-alt"></i> Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Shifa, I'd like to talk about..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p id="form-status" class="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="current-year">2026</span> Sumaiya Fahmida Shifa. All rights reserved.</p>
+      <p class="footer-subtext">Built with passion &amp; creativity</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

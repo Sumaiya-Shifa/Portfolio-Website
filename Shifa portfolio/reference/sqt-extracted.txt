@@ -1,0 +1,1663 @@
+American International University-Bangladesh (AIUB)
+Department of Computer Science
+Faculty of Science &Technology (FST)
+Spring 25-26
+Section: A
+Software Quality Assurance and Testing 
+     Online FMCG Dealership Management System
+ 
+A Report submitted By
+SN
+Student Name
+Student ID
+1
+Md Adib Rahman
+22-47887-2
+2
+Tawhid Hasan
+22-46618-1
+3
+Nabilah Farha
+23-50145-1
+4
+Sumaiya Fahmida Shifa
+23-50138-1
+Checked By Industry Personnel (Optional)
+Name:
+Designation:
+Company:
+Sign:
+Date:
+Software Test Plan
+for
+Online FMCG Dealership Management System
+Version 3.0 approved
+Prepared by 
+Md Adib Rahman
+Tawhid Hasan
+Nabilah Farha
+ 
+Sumaiya Fahmida Shifa
+American International University-Bangladesh
+Date: 19-05-26
+Contents
+Revision History
+3
+1.
+TEST PLAN IDENTIFIER:
+RS-MTP01.3
+4
+2.
+REFERENCES
+4
+3.
+INTRODUCTION
+4
+Background to the Problem
+4
+Solution to the Problem
+4
+4.
+REQUEIREMNT SPECIFICATION
+5
+4.1
+System Features
+5
+4.2
+System Quality Attributes
+7
+4.3
+System Interface
+7
+4.4
+Project Requirements
+10
+4.5
+4.4.1 Time Estimation (COCOMO Model)
+10
+4.6
+4.4.2 Cost Estimation
+10
+5.
+FEATURES NOT TO BE TESTED
+11
+6.
+TESTING APPROACH
+12
+6.1
+Testing Levels
+12
+6.2
+Test Tools
+12
+6.3
+Meetings
+13
+7.
+TEST CASES/TEST ITEMS
+13
+8.
+ITEM PASS/FAIL CRITERIA
+45
+9.
+TEST DELIVERABLES
+45
+10.
+STAFFING AND TRAINING NEEDS
+46
+10.1
+10.1 Staffing Requirements
+46
+10.2
+10.2 Training Requirements
+46
+11.
+RESPONSIBILITIES
+47
+12.
+TESTING SCHEDULE
+47
+12.1
+Phase Overview
+48
+13.
+PLANNING RISKS AND CONTINGENCIES
+49
+13.1 Risk Assessment Matrix
+49
+13.1
+Resource and Staffing Contingency
+49
+13.2
+Risk Monitoring
+50
+14.
+APROVALS
+50
+Revision History
+Revision
+Date
+Updated by
+Update Comments
+0.1
+09-05-26
+Md Adib Rahman
+First Draft
+0.2
+16-05-26
+Md Adib Rahman, Sumaiya Fahmida Shifa Tawhid Hasan
+, 
+Nabilah Farha
+Improved & Refined Test Cases 
+0.3
+18-05-26
+Tawhid Hasan
+Final Report (Performed minor improvements) 
+TEST PLAN IDENTIFIER:
+RS-MTP01.3
+REFERENCES
+Software Requirement Specification (SRS) — Online FMCG Dealership Management System
+Project Guidelines — Software Quality and Testing, Spring 25-26, AIUB
+Risk-Aware Hybrid Scrum-XP Model Research Paper — Group Assignment
+IEEE 829 Standard for Software Test Documentation
+INTRODUCTION
+Background to the Problem
+Bangladesh has a large and growing FMCG sector. Companies like Pran, Akij, Square, and Bashundhara distribute products across the country through dealer networks. Currently, the dealership acquisition process is entirely manual — prospective dealers must physically visit company offices, submit paper documents, and make payments in person.
+Local shopkeepers have no efficient way to find the nearest authorized dealer or compare discount offers. They rely entirely on word-of-mouth and personal contacts, causing supply delays and missed business opportunities.
+The root cause of the problem is the absence of a centralized digital platform connecting FMCG companies, dealers, and shopkeepers. This leads to slow onboarding, poor visibility in the distribution network, and inefficient communication throughout the supply chain.
+Solution to the Problem
+The proposed solution is the Online FMCG Dealership Management System — a web-based platform where prospective dealers can apply digitally, upload documents, and pay fees online. Administrators approve applications from a centralized dashboard. Shopkeepers find the nearest authorized dealer using geolocation, compare discount offers, place orders, and submit expired product return requests.
+This solution is appropriate because it uses standard web technologies, requires no specialized hardware, and directly solves the manual inefficiency at every layer of the distribution chain.
+Existing systems: ShopUp (Bangladesh) helps retailers with ordering and financing but does not handle dealer onboarding. Udaan (India) offers B2B distribution but is unavailable in Bangladesh. No existing platform provides online dealership application, document verification, expired product return management, and shopkeeper-facing dealer discovery for the Bangladesh FMCG market.
+REQUEIREMNT SPECIFICATION
+System Features
+User Registration and Login
+Functional Requirements
+1.1 The software shall allow Dealers, Shopkeepers, and Admins to register with a unique email and password.
+1.2 The software shall authenticate users using their registered email and password.
+1.3 If login fails more than 3 times, a CAPTCHA verification code shall be generated.
+1.4 If login fails 5 times, the account shall be blocked for one hour. [optional]
+Priority Level:
+ High
+Precondition:
+ User has a valid registered account
+Password Reset
+Functional Requirements
+2.1 The software shall allow users to request a password reset link via their registered email.
+2.2 The reset link shall be valid for 30 minutes and expire automatically after use.
+Priority Level:
+ High
+Precondition:
+ User has a registered account.
+Online Dealer Application & Payment
+Functional Requirements
+3.1 The software shall allow a registered Dealer to fill and submit a dealership application online.
+3.2 The software shall allow document uploads (NID, trade license, bank statement) in PDF or JPG format.
+3.3 The software shall allow online payment of the application fee with receipt generation.
+3.4 The software shall generate a unique application reference number on successful submission.
+Priority Level:
+ High
+Precondition:
+ User is logged in as Dealer.
+Admin Application Management & Reports
+Functional Requirements
+4.1 The software shall allow Admin to Approve or Reject dealer applications with a written reason.
+4.2 The software shall notify the applicant via email and SMS on approval or rejection.
+4.3 The software shall allow Admin to generate application summary and dealer performance reports.
+4.4 The software shall allow Admin to export reports as PDF.
+Priority Level:
+ High
+Precondition:
+ User is logged in as Admin.
+Shopkeeper Dealer Search & New Dealer Notifications
+Functional Requirements
+5.1 The software shall allow Shopkeepers to search for the nearest authorized dealer by location.
+5.2 The software shall display dealers sorted by distance with product categories and active discount offers.
+5.3 The software shall notify shopkeepers when a new dealer becomes active in their registered area.
+Priority Level:
+ High
+Precondition:
+ User is logged in as Shopkeeper.
+Product Catalog & Discount Management
+Functional Requirements
+6.1 The software shall allow approved Dealers to add, edit, and update stock for products in their catalog.
+6.2 The software shall allow Dealers to post discount offers with expiry dates.
+6.3 The software shall automatically hide expired discount offers from shopkeeper view.
+Priority Level:
+ Medium
+Precondition:
+ Dealer is approved and logged in.
+Order Placement & Order History
+Functional Requirements
+7.1 The software shall allow Shopkeepers to place orders with a selected Dealer.
+7.2 The software shall allow Shopkeepers to view their complete order history with status and details.
+7.3 The software shall notify the Dealer of each new incoming order.
+Priority Level:
+ Medium
+Precondition:
+ Shopkeeper is logged in; Dealer is active.
+Expired Product Return Policy
+Functional Requirements
+8.1 The software shall allow Shopkeepers to submit expired product return requests within 7 days of delivery.
+8.2 The software shall allow Dealers to approve or reject return requests with a resolution (refund or replacement).
+8.3 The software shall block return requests submitted outside the 7-day return policy window.
+Priority Level:
+ High
+Precondition:
+ Shopkeeper has a delivered order with expired products.
+Dealer Dashboard
+Functional Requirements
+9.1 The software shall display current stock levels, total sales, and pending/completed order counts on the dealer dashboard.
+Priority Level:
+ Medium
+Precondition:
+ Dealer is approved and logged in.
+System Quality Attributes
+Usability: A new dealer applicant shall be able to complete and submit a dealership application within 10 minutes without prior training.
+Performance: The system shall load dealer search results within 3 seconds for up to 500 concurrent users.
+Security: All passwords stored using bcrypt hashing. Uploaded documents accessible only to the applicant and Admin.
+Reliability: The system shall maintain 99% uptime during business hours (8 AM – 10 PM BST).
+Compatibility: Fully functional on Chrome, Firefox, and Edge browsers; responsive on mobile devices.
+System Interface
+Auth Screens (TC_001 to TC_006)
+Dealer Portal (TC_007, TC_008, TC_013 to TC_017)
+Admin Panel (TC_009 to TC_012, TC_018)
+Shopkeeper Portal (TC_019 to TC_026)
+Notification System (TC_020, TC_022, TC_023)
+Expired Product Return (TC_029, TC_030)
+Project Requirements
+Total Budget: 0 BDT (academic project — all tools free/open-source).
+Total Development Time: 10 days (09 May 2026 to 19 May 2026).
+Team Size: 4 members — 2 backend developers, 1 frontend developer, 1 QA lead.
+Technology Stack: React.js (frontend), Node.js/Express (backend), PostgreSQL (database).
+Environment: Development and testing on localhost.
+4.4.1 Time Estimation (COCOMO Model)
+Although CampusKart is an academic project with a 3-week sprint timeline, the following COCOMO-based estimation demonstrates how the effort and cost would be calculated in a real industry engagement. This analysis was prepared to understand the scope of work in a professional context.
+Project Parameters:
+Software Project Type: Organic (small team, familiar PHP/MySQL web technology stack)
+SLOC: 5,500 (Source Lines of Code, estimated across all MVC controllers, models, and views)
+Coefficient (Effort Factor): 2.4 | Project Complexity Exponent: 1.05 | Time Exponent: 0.38
+Standard Working Schedule: Adjusted to 8 hours/day
+Effort and Duration Calculation:
+Effort: PM = 2.4 * (5500/1000)^1.05 = 2.4 * 5.868 = 14.08 ≈ 14 Person-Months
+Duration: DM = 2.50 * (14)^0.38 = 2.50 * 2.71 = 6.78 months (compressed to 3 weeks for academic sprint)
+Adjusted DM: 6.78 * (8h/8h) = 6.78 months ≈ 3 weeks (27 April 2026 – 19 May 2026)
+Team Size: ST = PM / DM = 14 / 6 = 2.33 ≈ 3 developers (supported by 1 QA lead = 4 total)
+4.4.2 Cost Estimation
+The following cost breakdown is presented as a hypothetical real-world estimation. As an academic project, all tools used are free and open-source and the actual budget is 0 BDT. The figures below represent what a commercial version of this system would cost at Bangladesh market rates.
+Personnel Costs — Hypothetical Real-Project Estimate (Bangladesh Market Rates, 6-month engagement):
+Role
+Qty
+Monthly Rate (BDT)
+Months
+Total Cost (BDT)
+Project Manager / QA Lead
+1
+60,000
+6
+360,000
+Backend Developers (PHP/MySQL)
+2
+45,000
+6
+270,000 (each)
+Frontend Developer (UI/CSS)
+1
+40,000
+6
+240,000
+QA Engineers / Testers
+2
+30,000
+6
+180,000 (each)
+Subtotal
+1,050,000 BDT (est.)
+Infrastructure and Tools — Hypothetical Real-Project Estimate (6-month engagement):
+Item
+Cost (BDT)
+Duration
+Total Cost (BDT)
+Cloud Hosting (AWS/DigitalOcean/Hostinger)
+2,500/month
+6 months
+15,000
+Domain (.com.bd) and SSL Certificate
+4,000
+One-time
+4,000
+Local Payment Gateway (bKash/Nagad)
+12,000
+One-time
+12,000
+Development Tools and Software Licenses
+2,000/month
+6 months
+12,000
+SMS Gateway and OTP Notification Services
+1,500/month
+6 months
+9,000
+Security and Backup Tools (Cloudflare / DB Backups)
+2,000/month
+6 months
+12,000
+Subtotal
+64,000 BDT
+Total Estimated Cost Summary:
+Development (Personnel) Cost: 1,050,000 BDT
+Infrastructure Cost: 64,000 BDT
+Contingency Reserve (15%): (1,050,000 + 64,000) * 0.15 = 167,100 BDT
+Total Hypothetical Project Cost: 1,281,100 BDT
+Note: Actual project cost for this academic submission is 0 BDT. All tools used (XAMPP, VS Code, Git, Chrome, Selenium) are free/open-source. The above estimation is provided to demonstrate professional project planning skills as required by the course.
+FEATURES NOT TO BE TESTED
+The following areas will not be directly tested
+:
+Payment gateway integration (bKash, SSL Commerz) — actual transaction processing is the responsibility of the third-party provider. Payments are simulated/mocked during testing.
+Third-party SMS and email notification delivery — only that the system triggers the correct event is verified; delivery by external providers is not tested.
+Native mobile apps (iOS/Android) — web-only system; mobile apps are not in scope.
+Database server administration and backup procedures — infrastructure concerns outside the application boundary.
+Browser extensions and third-party plugins — behaviour when such tools are active is not tested.
+These exclusions were made considering the limited timeline, resource availability, and the current feature priorities of the project.
+TESTING APPROACH
+Testing Levels
+The testing for the Online FMCG Dealership project will consist of Unit, System/Integration (combined), and Acceptance test levels. Most testing will be done by the QA lead with the development team's participation due to the academic project timeline and team size.
+Unit Testing
+UNIT Testing will be done by the developer of each module and approved by the QA lead. Proof of unit testing (test case list, sample output, defect information) must be provided by the developer before the module is accepted for integration testing.
+System/Integration Testing
+SYSTEM/INTEGRATION Testing will be performed by the QA lead and the development team. All modules will be tested together to verify end-to-end workflows. A module may enter integration testing with up to two minor defects as long as they do not block testing of the core workflow.
+Acceptance Testing
+ACCEPTANCE Testing will be performed by the QA lead and frontend developer simulating real end-user workflows — dealer application, admin approval, shopkeeper search, order placement, expired product return — from start to finish.
+Test Tools
+Chrome DevTools — for inspecting UI, network requests, and console errors during manual testing.
+Postman — for testing all backend API endpoints directly.
+GitHub — for source version control and defect tracking.
+Google Sheets or Notion — for logging test case results and bug reports.
+All test cases in this plan are executed manually by the QA lead.
+Meetings
+The test team will meet once every day during the 10-day project window to evaluate progress and identify defects early. The QA lead will meet with the development team lead every two days. Additional emergency meetings may be called if a critical defect is found.
+TEST CASES/TEST ITEMS
+TC-001: User Registration
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Sumaiya Fahmida Shifa
+Test Case ID:
+ 
+TC_001
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ 
+High
+Test Executed By: Sumaiya Fahmida Shifa
+Module Name:
+ User Registration
+Test Execution Date: 13-05-26
+Test Title:
+ 
+Verify successful dealer registration with valid information
+Description:
+ Test the dealer registration page to ensure a new user can create a Dealer account with all valid details.
+Precondition(If any): User has not previously registered. Registration page is accessible.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+Navigate to the registration page
+Select role: Dealer.
+Enter full name: 
+Enter email: 
+Enter Mobile:
+Enter Password
+Confirm Password
+Click the register button
+Name: Rahim Uddin
+Email: 
+rahim@dealer
+.com
+Mobile: 01700000001
+Password: Test@1234
+System creates account and redirects to Dealer Dashboard with a success message.
+A
+s expected
+P
+ass
+Post Condition:
+ User account is stored in the database. User can log in with the registered credentials
+TC-002: User Registration with registered email
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Sumaiya Fahmida Shifa
+Test Case ID:
+ 
+TC_002
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ 
+High
+Test Executed By: Sumaiya Fahmida Shifa
+Module Name:
+ User Registration
+Test Execution Date: 13-05-26
+Test Title:
+ 
+Verify registration fails when email is already registered
+Description:
+ Test that the system prevents creation of a duplicate account using an email address that already exists.
+Precondition(If any): An account with email rahim@dealer.com already exists in the system.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Navigate to the registration page.
+2. Select role: Dealer.
+3. Enter email: rahim@dealer.com (already registered).
+4. Fill all other fields with valid data.
+5. Click the Register button.
+Email: rahim@dealer.com (duplicate)
+System shows error: 'This email address is already registered. Please use a different email.'
+As expected
+Pass
+Post Condition:
+ No new account is created. The existing account remains unchanged.
+TC-003: User Login with valid input
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Sumaiya Fahmida Shifa
+Test Case ID:
+ TC_003
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ 
+High
+Test Executed By: Sumaiya Fahmida Shifa
+Module Name:
+ 
+Authentication – Login
+Test Execution Date: 13-05-26
+Test Title:
+ 
+Verify login with valid username and password
+Description:
+ Test the login page to ensure a registered user can log in successfully with correct credentials.
+Precondition(If any): User must have a valid registered account.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Go to the website login page.
+2. Enter email: rahim@dealer.com.
+3. Enter password: Dealer@1234.
+4. Click the Login button.
+Email: rahim@dealer.com Password: Dealer@1234
+User is redirected to the Dealer Dashboard. Session is created successfully.
+As expected
+Pass
+Post Condition:
+ User is validated with the database and successfully logged in. Session details are stored.
+TC-004: User Login – failed login attempts
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Sumaiya Fahmida Shifa
+Test Case ID:
+ 
+TC_004
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High): High
+Test Executed By: Sumaiya Fahmida Shifa
+Module Name:
+ Authentication - Login
+Test Execution Date: 13-05-26
+Test Title:
+ 
+Verify account lockout after 5 consecutive failed login attempts
+Description:
+ Test that the system shows CAPTCHA after 3 failed attempts and locks account after 5 failed attempts.
+Precondition(If any): User has a registered account. No prior failed attempts.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Go to the login page.
+2. Enter email: rahim@dealer.com.
+3. Enter wrong password 3 times. Observe CAPTCHA.
+4. Enter wrong password 2 more times (5 total).
+5. Observe system response.
+Email: rahim@dealer.com Password: WrongPass1 (5 times)
+After 3rd attempt: CAPTCHA appears. After 5th attempt: account locked for 1 hour with message 'Account locked. Try again in 60 minutes.'
+As expected
+Pass
+Post Condition:
+ Account is locked for 1 hour. Correct credentials will not allow login during this period.
+TC-005: Password Reset
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Sumaiya Fahmida Shifa
+Test Case ID:
+ 
+TC_005
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ High
+Test Executed By: Sumaiya Fahmida Shifa
+Module Name: Password Reset
+Test Execution Date: 13-05-26
+Test Title:
+ Verify password reset email is sent for a registered email address
+Description:
+ Test that a user who forgets their password can request a reset link via their registered email
+Precondition(If any): User has a registered account with email rahim@dealer.com.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Go to the login page.
+2. Click 'Forgot password?'
+3. Enter email: rahim@dealer.com.
+4. Click 'Send reset link'.
+5. Check the registered email inbox. 
+Email: rahim@dealer.com
+System sends a password reset email with a unique secure link. Page shows: 'Reset link sent to your email.'
+As expected
+Pass
+Post Condition: Reset link is valid for 30 minutes. User can click it to set a new password.
+TC-006: Password Reset – Unregistered email
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Sumaiya Fahmida Shifa
+Test Case ID:
+ 
+ZB_TC_006
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ 
+Medium
+Test Executed By: Sumaiya Fahmida Shifa
+Module Name:
+ Password Reset
+Test Execution Date: 13-05-26
+Test Title:
+ 
+Verify password reset fails for an unregistered email address
+Description:
+ 
+Test that the system does not send a reset email for an email not registered in the system.
+Precondition(If any): The email unknown@test.com is not registered in the system.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Go to the login page.
+2. Click 'Forgot password?'
+3. Enter email: unknown@test.com.
+4. Click 'Send reset link'.
+Email: unknown@test.com (not registered)
+System shows message: 'If this email is registered, a reset link has been sent.' (no email is actually sent).
+As expected
+Pass
+Post Condition:
+ No email is sent. Security is maintained — attacker cannot confirm whether email exists.
+TC-007: Dealer Application
+Project Name: Online FMCG Dealership
+Test Designed By: Sumaiya Fahmida Shifa
+Test Case ID: TC_007
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High): High
+Test Executed By: Sumaiya Fahmida Shifa
+Module Name: Dealer Application
+Test Execution Date: 14-05-26
+Test Title: Verify successful dealership application submission with all required documents
+Description:
+ Test that a logged-in dealer can complete and submit a dealership application with all required fields and documents.
+Precondition(If any): 
+):  
+User is logged in as Dealer. Valid document files (PDF/JPG) are ready to upload.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Dealer.
+2. Click 'Apply for Dealership'.
+3. Select company: Pran. Select category: Beverages.
+4. Fill in business name, address, trade license number.
+5. Upload NID scan (JPG, 1.2MB).
+6. Upload trade license (PDF, 800KB).
+7. Upload bank statement (PDF, 1.5MB).
+8. Click Submit Application. 
+Company: Pran Category: Beverages NID: nid_scan.jpg Trade License: license.pdf Bank Statement: bank.pdf
+Application accepted. Reference number generated (APP-2026-0045). Confirmation email sent to applicant. 
+As expected
+Pass
+Post Condition: Application stored in database with status 'Pending'. Appears in Admin dashboard.
+TC-008: Dealer Application – Required Document Missing
+Project Name:
+ Online FMCG Dealership
+Test Designed By: : Sumaiya Fahmida Shifa
+Test Case ID:
+ 
+TC_008
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ High
+Test Executed By: : Sumaiya Fahmida Shifa
+Module Name: Dealer Application
+Test Execution Date: 14-05-26
+Test Title:
+ 
+Verify application submission is blocked when required document is missing
+Description:
+ 
+Test that the system prevents form submission if a mandatory document is not uploaded.
+Precondition(If any): User is logged in as Dealer.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Dealer.
+2. Click 'Apply for Dealership'.
+3. Fill all text fields correctly.
+4. Upload NID scan only. Leave trade license and bank statement empty.
+5. Click Submit Application. 
+NID: uploaded Trade License: missing Bank Statement: missing 
+System shows validation error: 'Please upload all required documents: Trade License, Bank Statement.'
+As expected
+Pass
+Post Condition:
+ Application is not submitted. No record created in the database.
+TC-009: Admin Application Management
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Md Adib Rahman
+Test Case ID:
+ 
+TC_009
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High): High
+Test Executed By: Md Adib Rahman
+Module Name:
+ Admin Application Management
+Test Execution Date: 13-05-26
+Test Title:
+ Verify admin can approve a pending dealer application
+Description:
+ Test that an admin can view and approve a pending application, triggering a status change and applicant notification.
+Precondition(If any): Admin is logged in. At least one application is in Pending status.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Admin.
+2. Navigate to Applications dashboard.
+3. Click on application APP-2026-0045.
+4. Review uploaded documents.
+5. Click 'Approve'. Confirm in dialog. 
+Application ID: APP-2026-0045 Status: Pending 
+Status changes to 'Approved'. Dealer receives email: 'Your dealership application has been approved.'
+As expected
+Pass
+Post Condition:
+ Dealer account activated with dealer privileges. Dealer appears in shopkeeper search results.
+TC-010: Admin Application Management – Reject Application
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Md Adib Rahman
+Test Case ID:
+ 
+TC_010
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ High
+Test Executed By: Md Adib Rahman
+Module Name:
+ Admin Application Management
+Test Execution Date: 13-05-26
+Test Title: Verify admin can reject an application with a reason
+Description:
+ Test that an admin can reject a pending application and provide a rejection reason communicated to the applicant.
+Precondition(If any): 
+):  
+Admin is logged in. At least one application is in Pending status.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Admin.
+2. Navigate to Applications dashboard.
+3. Click on a pending application.
+4. Click 'Reject'.
+5. Enter reason: 'Bank statement is older than 3 months.'
+6. Confirm rejection.
+Rejection reason: 'Bank statement is older than 3 months.'
+Status changes to 'Rejected'. Dealer receives email with the rejection reason.
+As expected
+Pass
+Post Condition:
+ Dealer account remains inactive. Dealer can re-apply with updated documents.
+TC-011: Shopkeeper Dealer Search
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Md Adib Rahman
+Test Case ID:
+ 
+TC_011
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ High
+Test Executed By: Md Adib Rahman
+Module Name:
+ Shopkeeper Dealer Search
+Test Execution Date:13-05-26
+Test Title:
+ 
+Verify shopkeeper can find nearest dealer by location
+Description:
+ 
+Test that a logged-in shopkeeper can search for authorized dealers near their location, sorted by distance.
+Precondition(If any): Shopkeeper is logged in. At least 3 approved dealers exist in different locations.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Shopkeeper.
+2. Navigate to 'Find Dealer'.
+3. Enter location: Mirpur, Dhaka.
+4. Click Search.
+5. Observe search results 
+Location: Mirpur, Dhaka 
+List of nearest dealers displayed sorted by distance (km), with name, address, distance, and product categories.
+As expected
+Pass
+Post Condition:
+ Shopkeeper can view dealer contact details and available offers.
+TC-012: Shopkeeper Dealer Search – No Dealer Found
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Md Adib Rahman
+Test Case ID:
+ 
+TC_012
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ Medium
+Test Executed By: Md Adib Rahman
+Module Name:
+ Shopkeeper Dealer Search
+Test Execution Date: 13-05-26
+Test Title:
+ Verify search returns empty state message when no dealers found in area
+Description:
+ 
+Test that the system handles gracefully a location where no dealers are registered.
+Precondition(If any): Shopkeeper is logged in. No dealers registered in the searched area.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Shopkeeper.
+2. Navigate to 'Find Dealer'.
+3. Enter location: Bandarban Sadar.
+4. Click Search. Observe result. 
+Location: Bandarban Sadar
+System displays: 'No authorized dealers found in your area. Try expanding your search radius.'
+As expected
+Pass
+Post Condition:
+ No crash or error. Empty state message displayed correctly.
+TC-013: Notification System - Shopkeeper
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Md Adib Rahman
+Test Case ID:
+ 
+TC_013
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ Medium
+Test Executed By: Md Adib Rahman
+Module Name:
+ Notification System
+Test Execution Date:14-05-26
+Test Title:
+ 
+Verify shopkeeper receives notification when a new dealer is approved in their area
+Description:
+ 
+Test that shopkeepers are automatically notified when a new authorized dealer becomes active in their registered location area.
+Precondition(If any): Shopkeeper is logged in and has registered location as Mirpur, Dhaka. A new dealer in Mirpur is approved by admin.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Admin approves a new dealer application for Mirpur, Dhaka.
+2. Log in as Shopkeeper (registered location: Mirpur).
+3. Check notification bell icon.
+4. Open notifications panel. 
+New dealer location: Mirpur, Dhaka Shopkeeper area: Mirpur, Dhaka 
+Shopkeeper receives in-app notification: 'A new dealer is now available in your area: Rahim Traders — Pran Beverages.'
+As expected.
+Pass
+Post Condition:
+ 
+Shopkeeper can click notification to view new dealer's profile and place an order.
+TC-014: Notification System - Dealer
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Md Adib Rahman
+Test Case ID:
+ 
+TC_014
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ 
+Medium
+Test Executed By: Md Adib Rahman
+Module Name:
+ Notification System
+Test Execution Date:14-05-26
+Test Title:
+ 
+Verify dealer receives SMS and email notification when application status changes
+Description:
+ 
+Test that the notification system sends both email and SMS when a dealer application is approved or rejected.
+Precondition(If any): Dealer has submitted application APP-2026-0045. Admin is about to approve it.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Admin logs in and approves APP-2026-0045.
+2. Check dealer's registered email inbox.
+3. Check dealer's registered mobile number for SMS. 
+Dealer email: rahim@dealer.com Dealer mobile: 01700000001
+Dealer receives email notification AND SMS: 'Your dealership application APP-2026-0045 has been approved.'
+As expected
+Pass
+Post Condition: Notification is logged in the system. Dealer can view notification history in their dashboard.
+TC-015: Dealer Dashboard
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Md Adib Rahman
+Test Case ID:
+ 
+TC_015
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ 
+High
+Test Executed By: Md Adib Rahman
+Module Name:
+ Dealer Dashboard
+Test Execution Date: 14-05-26
+Test Title:
+ 
+Verify dealer dashboard displays correct stock summary and sales tracking
+Description:
+ 
+Test that an approved dealer's dashboard shows current stock levels, total sales, and pending orders accurately.
+Precondition(If any): Dealer is logged in with approved status. At least 5 orders have been placed with this dealer.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as approved Dealer.
+2. Navigate to Dashboard.
+3. Observe the stock summary section.
+4. Observe the sales tracking section.
+5. Verify numbers match actual orders in the system.
+Stock: Pran Mango Juice 1L — 500 units Completed orders: 5 Pending orders: 2
+Dashboard shows correct stock count, total sales amount, number of completed orders, and number of pending orders
+As expected
+Pass
+Post Condition:
+ 
+Dealer can click on any stat to view detailed breakdown of orders and stock movements.
+TC-016: Product Catalog Management – Add a new product
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Md Adib Rahman
+Test Case ID:
+ 
+TC_016
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ 
+Medium
+Test Executed By: Md Adib Rahman
+Module Name:
+ Product Catalog Management
+Test Execution Date:14-05-26
+Test Title:
+ Verify dealer can add a new product to their catalog
+Description:
+ 
+Test that an approved dealer can add a new product with name, price, unit, and stock quantity to their product catalog.
+Precondition(If any): Dealer is logged in with approved status.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as approved Dealer.
+2. Navigate to 'Product Catalog'.
+3. Click 'Add New Product'.
+4. Enter product name: Pran Mango Juice 1L.
+5. Enter price: 
+৳
+85 per unit.
+6. Enter stock quantity: 500.
+7. Select category: Beverages.
+8. Click Save.
+Product: Pran Mango Juice 1L Price: 
+৳
+85 Stock: 500 units Category: Beverages
+Product is saved and appears in the dealer's catalog. Shopkeepers can see it in product listings.
+As expected
+Pass
+Post Condition:
+ Product is active in the catalog and visible to shopkeepers browsing this dealer's products.
+TC-017: Product Catalog Management – Update stock quantity
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Tawhid Hasan
+Test Case ID:
+ 
+TC_017
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ 
+Medium
+Test Executed By: Tawhid Hasan
+Module Name:
+ 
+Product Catalog Management
+Test Execution Date: 14-05-26
+Test Title:
+ 
+Verify dealer can update stock quantity for an existing product
+Description:
+ 
+Test that a dealer can update the available stock quantity of a product already in their catalog
+Precondition(If any): Dealer is logged in. Product 'Pran Mango Juice 1L' already exists in catalog with 500 units.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Dealer.
+2. Navigate to 'Product Catalog'.
+3. Click 'Edit' on Pran Mango Juice 1L.
+4. Change stock quantity from 500 to 350.
+5. Click Save.
+Product: Pran Mango Juice 1L Old stock: 500 New stock: 350
+Stock quantity updated to 350. Dashboard and product listing reflect the new quantity immediately.
+As expected
+Pass
+Post Condition:
+ Updated stock is visible to shopkeepers browsing the dealer's catalog.
+TC-018: Discount Management
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Tawhid Hasan
+Test Case ID:
+ 
+TC_018
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ Medium
+Test Executed By: Tawhid Hasan
+Module Name:
+ Discount Management
+Test Execution Date: 14-05-26
+Test Title:
+ 
+Verify dealer can post a company discount offer
+Description:
+ 
+Test that an approved dealer can create and publish a discount offer for a product, making it visible to shopkeepers
+Precondition(If any): Dealer is logged in with approved status.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as approved Dealer.
+2. Navigate to 'Manage Offers'.
+3. Click 'Add New Offer'.
+4. Select product: Pran Mango Juice 1L.
+5. Enter discount: 15%.
+6. Set expiry date: 31 May 2026.
+7. Click Save Offer.
+Product: Pran Mango Juice 1L Discount: 15% Expiry: 31 May 2026
+Offer saved and visible in dealer's offer list. Shopkeepers see the offer in dealer search results.
+As expected
+Pass
+Post Condition:
+ Offer is active and visible to shopkeepers until expiry date.
+TC-019: Discount Management – Expired discount offer
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Tawhid Hasan
+Test Case ID:
+ 
+TC_019
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ 
+Medium
+Test Executed By: Tawhid Hasan
+Module Name:
+ Discount Management
+Test Execution Date: 15-05-26
+Test Title:
+ 
+Verify expired discount offer is automatically hidden from shopkeepers
+Description:
+ 
+Test that when a discount offer's expiry date passes, it is no longer shown to shopkeepers in search results.
+Precondition(If any): A discount offer for Pran Mango Juice 1L expired on 01 May 2026 exists in the system.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Shopkeeper.
+2. Search for dealers selling Pran Mango Juice 1L.
+3. Check if the expired 15% offer (expiry: 01 May 2026) appears.
+Offer expiry date: 01 May 2026 (past date) Current date: 09 May 2026
+Expired offer is NOT shown to shopkeepers. Only active offers with future expiry dates are displayed.
+As expected
+Pass
+Post Condition:
+ Expired offer remains in dealer's offer history as 'Expired' but is hidden from shopkeeper view.
+TC-020: Expired Product Return – Shopkeeper Submit
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Tawhid Hasan
+Test Case ID:
+ 
+TC_020
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ 
+High
+Test Executed By: Tawhid Hasan
+Module Name:
+ Expired Product Return
+Test Execution Date: 15-05-26
+Test Title:
+ Verify shopkeeper can submit an expired product return request
+Description:
+ Test that a shopkeeper can raise a return request for expired products received from a dealer, following the return policy.
+Precondition(If any): Shopkeeper is logged in. Shopkeeper has a completed order containing products that have expired.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Shopkeeper.
+2. Navigate to 'Order History'.
+3. Select the order containing expired products.
+4. Click 'Return Expired Products'.
+5. Select the expired item: Pran Mango Juice 1L (qty: 10).
+6. Enter reason: 'Products received with expired date.'
+7. Upload photo of expired product label.
+8. Click Submit Return Request. 
+Order ID: ORD-2026-0031 Expired product: Pran Mango Juice 1L Qty to return: 10 Expiry date on product: 01 Apr 2026
+Return request submitted successfully. Reference number generated (RET-2026-0010). Dealer and admin are notified.
+As expected
+Pass
+Post Condition:
+ Return request is logged with status 'Pending'. Dealer can view and process the return from their dashboard.
+TC-021: Expired Product Return – Dealer Approval
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Tawhid Hasan
+Test Case ID:
+ 
+TC_021
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ High
+Test Executed By: Tawhid Hasan
+Module Name:
+ Expired Product Return
+Test Execution Date: 15-05-26
+Test Title:
+ Verify dealer can approve an expired product return request
+Description
+ 
+Test that a dealer receives an expired product return request and can approve it, triggering a refund or replacement.
+Precondition(If any): Dealer is logged in. Return request RET-2026-0010 is in Pending status.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Dealer.
+2. Navigate to 'Return Requests'.
+3. Click on return request RET-2026-0010.
+4. Review the submitted photo and details.
+5. Click 'Approve Return'.
+6. Select resolution: Replacement.
+7. Confirm approval. 
+Return request: RET-2026-0010 Resolution: Replacement
+Return approved. Status changes to 'Approved — Replacement'. Shopkeeper receives notification: 'Your return request has been approved. Replacement will be delivered.'
+As expected
+Pass
+Post Condition:
+ Replacement order is created in the system. Shopkeeper's return history is updated.
+TC-022: Expired Product Return – Return request 
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Tawhid Hasan
+Test Case ID:
+ 
+TC_022
+Test Designed Date: 11-05-26
+Test Priority(Low, Medium, High):
+ Medium
+Test Executed By: Tawhid Hasan
+Module Name:
+ Expired Product Return
+Test Execution Date: 16-05-26
+Test Title:
+ 
+Verify return request is rejected when submitted after the return policy window
+Description:
+ 
+Test that the system blocks a return request if the product was purchased outside the allowed return window (e.g. more than 7 days after delivery).
+Precondition(If any): Shopkeeper is logged in. Order was delivered 15 days ago. Return policy allows 7 days only.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Shopkeeper.
+2. Navigate to 'Order History'.
+3. Select an order delivered 15 days ago.
+4. Click 'Return Expired Products'.
+5. Attempt to submit return request. 
+Order delivery date: 24 Apr 2026 Return attempt date: 09 May 2026 Return window: 7 days
+System shows error: 'Return window has expired. Returns must be submitted within 7 days of delivery.'
+As expected 
+Pass
+Post Condition:
+ No return request is created. Shopkeeper is shown the return policy details.
+TC-023: Order Placement
+Project Name:
+ Online FMCG Dealership
+Test Designed By: Tawhid Hasan
+Test Case ID:
+ 
+TC_023
+Test Designed Date: 11-05-26
+Test Priority(Low, Medium, High):
+ 
+Medium
+Test Executed By: Tawhid Hasan
+Module Name:
+ Order Placement
+Test Execution Date: 16-05-26
+Test Title:
+ 
+Verify shopkeeper can place an order with a selected dealer
+Description:
+ 
+Test the complete order placement workflow from product selection to order confirmation.
+Precondition(If any): Shopkeeper is logged in. Target dealer has at least one active product listing.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Shopkeeper.
+2. Search and select a dealer.
+3. Click 'View Products'.
+4. Select: Pran Mango Juice 1L. Enter qty: 50.
+5. Click 'Add to Order'.
+6. Click 'Place Order'. Confirm in dialog. 
+Product: Pran Mango Juice 1L Quantity: 50 units
+Order placed. Confirmation page shows Order ID and summary. Dealer receives order notification.
+As expected
+Pass
+Post Condition:
+ 
+Order record created in database. Dealer can view and manage the order from their dashboard.
+TC-024: Shopkeeper Profile & Order History
+Project Name:
+ Online FMCG Dealership
+Test Designed By: 
+Nabilah Farha
+Test Case ID:
+ 
+TC_024
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ Medium
+Test Executed By: 
+Nabilah Farha
+Module Name:
+ Shopkeeper Profile & Order History
+Test Execution Date: 13-05-26
+Test Title:
+ 
+Verify shopkeeper can view their complete order history
+Description:
+ 
+Test that a shopkeeper can access a list of all their past orders with status, date, dealer name, and total amount.
+Precondition(If any): Shopkeeper is logged in and has placed at least 3 orders previously.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Shopkeeper.
+2. Navigate to 'My Orders'.
+3. Observe the order history list.
+4. Click on one order to view its details 
+Shopkeeper account with 3 past orders
+Order history page shows all past orders with Order ID, date, dealer name, product list, total amount, and status (Completed/Pending/Returned).
+As expected
+Pass
+Post Condition:
+ 
+Shopkeeper can filter orders by date range or status. Each order detail page shows full breakdown.
+TC-025: Shopkeeper Profile & Order History – Update Profile
+Project Name:
+ Online FMCG Dealership
+Test Designed By: 
+Nabilah Farha
+Test Case ID:
+ 
+TC_025
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High):
+ 
+Low
+Test Executed By: 
+Nabilah Farha
+Module Name:
+ Shopkeeper Profile & Order History
+Test Execution Date: 13-05-26
+Test Title:
+ 
+Verify shopkeeper can update their profile information
+Description:
+ 
+Test that a shopkeeper can edit their profile — shop name, address, and mobile number — and changes are saved correctly.
+Precondition(If any): Shopkeeper is logged in.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Shopkeeper.
+2. Navigate to 'My Profile'.
+3. Click 'Edit Profile'.
+4. Change shop name to: Karim General Store.
+5. Update address: House 12, Kafrul, Dhaka.
+6. Click Save.
+New shop name: Karim General Store New address: House 12, Kafrul, Dhaka
+Profile updated successfully. Dashboard and search result listings reflect the new shop name and address.
+As expected
+Pass
+Post Condition:
+ 
+Updated profile information is stored in the database and visible in dealer search results.
+TC-026: Payment Tracking
+Project Name:
+ Online FMCG Dealership
+Test Designed By: 
+Nabilah Farha
+Test Case ID:
+ 
+TC_026
+Test Designed Date: 09-05-26
+Test Priority(Low, Medium, High): High
+Test Executed By: 
+Nabilah Farha
+Module Name:
+ Payment Tracking
+Test Execution Date: 13-05-26
+Test Title:
+ 
+Verify dealer application fee payment is recorded and tracked
+Description:
+ 
+Test that when a dealer pays the dealership application fee, the payment is recorded and a receipt is generated.
+Precondition(If any)
+:  
+Dealer has submitted application and is on the payment step. Payment gateway is in test/mock mode.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Dealer.
+2. Navigate to application APP-2026-0045.
+3. Click 'Pay Application Fee'.
+4. Enter mock payment details (test card).
+5. Click 'Pay Now'.
+6. Check payment status. 
+Application: APP-2026-0045 Fee amount: 
+৳
+5,000 Payment method: Mock/Test”
+Payment recorded as 'Paid'. Receipt generated with transaction ID. Application status moves to 'Under Review'.
+As expected
+Pass
+Post Condition:
+ 
+: 
+Payment record stored in database. Admin can see payment confirmation against the application.
+TC-027: Payment Tracking – Failed payment
+Project Name:
+ Online FMCG Dealership
+Test Designed By: 
+Nabilah Farha
+Test Case ID: TC_027
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ High
+Test Executed By: 
+Nabilah Farha
+Module Name:
+ 
+Blog
+Test Execution Date: 14-05-26
+Test Title:
+ 
+Verify failed payment shows error and does not advance application status
+Description:
+ 
+Test that if a payment fails (e.g. insufficient funds), the application status is not changed and the dealer is shown an error.
+Precondition(If any): Dealer is on the payment step for application APP-2026-0046. Mock payment is set to fail.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Dealer.
+2. Navigate to application APP-2026-0046.
+3. Click 'Pay Application Fee'.
+4. Enter mock failed payment details.
+5. Click 'Pay Now'.
+6. Observe result. 
+Application: APP-2026-0046 Fee: 
+৳
+5,000 Payment result: Failed (mock)
+System shows error: 'Payment failed. Please check your details and try again.' Application status remains 'Payment Pending'.
+As expected
+Pass
+Post Condition:
+ 
+No payment record created. Application status unchanged. Dealer can retry payment.
+TC-028: Admin Reports & Analytics
+Project Name:
+ Online FMCG Dealership
+Test Designed By: 
+Nabilah Farha
+Test Case ID:
+ 
+TC_028
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ Medium
+Test Executed By: 
+Nabilah Farha
+Module Name:
+ Admin Reports & Analytics
+Test Execution Date: 14-05-26
+Test Title:
+ 
+Verify admin can generate a dealer application summary report
+Description:
+ 
+Test that the admin can generate and view a summary report showing total applications, approvals, rejections, and pending counts for a selected date range.
+Precondition(If any): Admin is logged in. At least 10 applications exist across different statuses.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Admin.
+2. Navigate to 'Reports & Analytics'.
+3. Select report type: Application Summary.
+4. Set date range: 01 May 2026 to 09 May 2026.
+5. Click Generate Report.
+6. Observe the report output. 
+Date range: 01 May – 09 May 2026 
+Report displays: Total applications, Approved count, Rejected count, Pending count, Total fees collected 
+— all matching actual data in the system.
+As expected
+Pass
+Post Condition:
+ 
+Report can be exported as PDF or printed. Data matches live dashboard statistics.
+TC-029: Admin Reports & Analytics – View top performing dealers
+Project Name:
+ Online FMCG Dealership
+Test Designed By: 
+Nabilah Farha
+Test Case ID:
+ 
+TC_029
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High):
+ Medium
+Test Executed By: 
+Nabilah Farha
+Module Name:
+ Admin Reports & Analytics
+Test Execution Date: 14-05-26
+Test Title:
+ 
+Verify admin can view top performing dealers by order volume
+Description:
+ 
+Test that the admin analytics dashboard shows a ranked list of dealers by number of orders fulfilled in a selected period.
+Precondition(If any): Admin is logged in. At least 5 dealers have fulfilled orders in the past 30 days.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Admin.
+2. Navigate to 'Reports & Analytics'.
+3. Select report type: Dealer Performance.
+4. Set period: Last 30 days.
+5. Click Generate Report.
+6. Observe ranked dealer list. 
+Period: Last 30 days Expected top dealer: Rahim Traders (50 orders)
+Report shows dealers ranked by order volume, with dealer name, area, company, and total orders fulfilled. Top dealer matches expected data.
+As expected
+Pass
+Post Condition:
+ 
+Admin can click on any dealer in the report to view their full profile and order history.
+TC-030: Admin Reports & Analytics – Export analytics as pdf
+Project Name:
+ Online FMCG Dealership
+Test Designed By: 
+Nabilah Farha
+Test Case ID:
+ 
+TC_030
+Test Designed Date: 10-05-26
+Test Priority(Low, Medium, High): Low
+Test Executed By: 
+Nabilah Farha
+Module Name:
+ Admin Reports & Analytics
+Test Execution Date: 14-05-26
+Test Title:
+ Verify admin can export analytics report as PDF
+Description:
+ Test that the admin can export any generated analytics report as a downloadable PDF file.
+Precondition(If any): Admin is logged in. A report has been generated on screen.
+Test Steps
+Test Data
+Expected Results
+Actual Results
+Status
+(Pass/Fail)
+1. Log in as Admin.
+2. Generate any analytics report (e.g. Application Summary).
+3. Click 'Export as PDF'.
+4. Check that the file downloads.
+5. Open the PDF and verify content matches the on-screen report. 
+Report type: Application Summary Date range: 01–09 May 2026
+PDF file downloads successfully. Content matches the on-screen report including all counts, date range, and table data.
+As expected
+Pass
+Post Condition:
+ PDF is saved to the admin's device. File is properly formatted and printable.
+ITEM PASS/FAIL CRITERIA
+All High priority test cases must pass with no major defects.
+At least 90% of all 30 test cases (High, Medium, Low priority) pass successfully.
+No critical defect (system crash, data loss, or security failure) remains unresolved at submission.
+All core user journeys — dealer application, admin approval, shopkeeper search, order placement, expired product return — complete end-to-end without error.
+Minor defects (cosmetic UI issues, non-critical edge cases) may remain open if they do not block core functionality, and must be documented in the defect report.
+TEST DELIVERABLES
+This Software Test Plan document — TP_OnlineFMCGDealership_1.0 (30 test cases)
+Defect / Incident Report — to be completed during test execution
+Test Summary Report — to be completed after all test cycles
+Screen prototypes / UI wireframes (submitted as Appendix with printed report)
+Test logs and execution records
+STAFFING AND TRAINING NEEDS
+There is one full-time QA lead assigned for system/integration and acceptance testing phases. The two backend developers handle unit testing for their own modules and provide evidence to the QA lead. The following training areas are required:
+Developers and QA tester need familiarity with Postman for API endpoint testing and Chrome DevTools for frontend debugging.
+QA lead requires training on structured test case writing following the IEEE 829 format used in this document.
+All team members need to understand the system's user roles (Dealer, Shopkeeper, Admin) and workflows to support acceptance testing accurately.
+10.1 Staffing Requirements
+The project team consists of four (4) members who collectively serve as developers, testers, and QA reviewers. Although this is an academic project, roles have been distributed to simulate a real industry environment:
+QA Lead / Test Manager (1 member): Responsible for writing and executing the test plan, managing defect logs, and signing off on acceptance criteria. The QA lead coordinates all testing activities and escalates critical defects.
+Backend Developers (2 members): Responsible for implementing the PHP MVC controllers, database queries, AJAX endpoints, and unit testing their own modules before handing off to the QA lead.
+Frontend Developer / UI Tester (1 member): Responsible for CSS layout, template views, and browser-level UI verification. Also participates in acceptance testing by simulating real user workflows.
+10.2 Training Requirements
+To perform complete and proper testing, the following training areas must be addressed before the testing phase begins:
+Technical Training — PHP MVC & AJAX: All team members require a working understanding of the Native PHP MVC routing structure (Controllers, Models, Views) and how AJAX requests are handled to correctly interpret test failures versus code bugs.
+Tool Training — Selenium WebDriver with Python: The QA lead and supporting testers need hands-on training with Selenium for automated regression testing of login, search, and messaging workflows.
+Tool Training — VS Code & Git Workflow: Developers must follow the agreed push/pull workflow using Git to ensure test environments are always in sync. Untested code branches must not be merged before QA sign-off.
+Security Awareness — SQL Injection & XSS: All team members need basic awareness of common web vulnerabilities (SQL Injection, Cross-Site Scripting) to identify potential security defects during testing. Input validation and prepared statements must be verified in every module.
+Admin Dashboard Training: The team member simulating Administrator role during acceptance testing must be trained on the full moderation workflow — User Request review, Product Request approval/rejection, and notification handling — to accurately execute acceptance test cases.
+RESPONSIBILITIES
+Responsibilities
+TM
+PM
+Dev
+Team
+Test
+Team
+Client
+Acceptance Test Documentation & Execution
+System/Integration Test Documentation & Execution
+Unit Test Documentation & Execution 
+System Design Reviews 
+Detail Design Reviews
+Test Procedures & Rules 
+Screen & Prototype Reviews
+Change Control & Regression Testing
+TESTING SCHEDULE
+The CampusKart project follows a structured 6-month development and testing timeline from 27 April 2026 to 19 May 2026 (22 weeks). The schedule below outlines the major testing phases and milestones. This Gantt chart demonstrates how testing activities overlap with development to enable early defect detection and iterative quality improvement.
+ 
+Phase Overview
+Phase 1 — Planning and Design Reviews (Week 1 (27 Apr – 03 May 2026)): System Design Review, Detail Design Review, Acceptance Criteria Definition, and Test Plan creation are completed. Test procedures and rules are finalized.
+Phase 2 — Test Planning and Documentation (Week 1–2: 27 Apr – 10 May 2026): Unit Test Plans, System/Integration Test Plans, and Acceptance Test Plans are drafted in parallel with the development kick-off. All screen prototypes are reviewed and finalized by 07 May 2026. Report mock-ups reviewed and approved by 10 May 2026.
+Phase 3 — Content Creation and Prototype Reviews (Week 1–2: 27 Apr – 10 May 2026): UI wireframes and screen prototypes for all test case modules are finalized. Report structure, mock-ups, and prototype reviews are completed. System interface documentation is submitted to team members for review.
+Phase 4 — Development and Coding Phase (Week 1–2: 27 Apr – 10 May 2026): Core PHP MVC modules (Authentication, Marketplace, Messaging, Admin Dashboard) are built and verified. AJAX endpoints and MySQL database handshakes are continuously tested by the QA lead using Chrome DevTools and Postman. All modules are code-complete by 10 May 2026.
+Phase 5 — Quality Assurance and Defect Management (Week 2–3: 04 May – 17 May 2026): Unit testing runs iteratively alongside development. System/Integration testing verifies all end-to-end workflows (Login → Listing → Messaging → Admin Moderation). Defect logging and triage tracked in Google Sheets. P0/P1 defects must be resolved before acceptance testing begins. DRE target: 95%.
+Phase 6 — Acceptance Testing, Reporting, and Defense Preparation (11 May – 19 May 2026): UAT is conducted by the QA lead simulating real student and admin workflows. Regression testing runs until three consecutive clean passes are achieved. Final defect/incident reports are produced. Test logs and turnover documentation are completed. Go/No-Go deployment decision and project defense are on 19 May 2026.
+PLANNING RISKS AND CONTINGENCIES
+13.1 Risk Assessment Matrix
+The following table identifies the primary risks associated with the development and deployment of CampusKart within the AIUB academic environment. Each risk has been assessed for impact level and assigned a concrete mitigation strategy:
+Risk Category
+Description
+Impact Level
+Mitigation Strategy
+Personnel Shortage
+Two team members may be unavailable during the critical acceptance testing phase due to other academic commitments or examinations.
+High
+QA lead assumes extra review duties. Developers must document unit test evidence in advance so testing can proceed independently.
+Technical Debt (No Framework)
+Native PHP/CSS without Bootstrap may increase debugging time for responsive layout issues, especially across Chrome and Firefox.
+Medium
+Strict adherence to AIUB-approved UI prototypes. Frequent CSS regression testing using Chrome DevTools before each sprint sign-off.
+Data Security Risk
+Potential for SQL Injection or unauthorized access to student/admin data through unsanitized form inputs.
+High
+Mandatory use of Prepared Statements in all DB queries. Multi-level session validation (Admin vs. Student role check on every page load).
+User Adoption During Pilot
+Low student participation during UAT pilot phase may produce insufficient acceptance test data.
+Medium
+Incentivize a 20-student pilot group coordinated by PM. Fallback: QA lead simulates all 12 test case user stories personally.
+Environment Stability
+Local XAMPP server crashes under concurrent AJAX messaging load during integration testing.
+Low
+Stress-test integration points before the pilot launch. Configure XAMPP connection pool limits. Maintain DB backup snapshots every 24 hours.
+Requirement Creep
+New feature requests from the instructor or team mid-cycle that were not in the original SRS.
+Medium
+Requirements are frozen at the SRS version submitted. Any change requires written agreement from all 4 members and documented SRS revision before implementation.
+ 
+Resource and Staffing Contingency
+Critical Constraint: As of 19 May 2026 (Defense Day), the most significant operational risk is team availability during the final acceptance testing week. The project follows a structured No-Skip-No-Bypass policy — no testing phase will be omitted to save time. If a team member is unavailable, the QA lead will 
+assume additional responsibilities and the final launch date will be extended by a maximum of 5 days to maintain 100% quality assurance coverage.
+ 
+Risk Monitoring
+The QA Lead will conduct a brief risk audit at every weekly team meeting. Risks are tracked using a shared issue tracker (GitHub Issues or Google Sheets). Any risk that escalates from Medium to High must be immediately reported to the full team and a revised mitigation plan documented within 24 hours. The Gantt chart in Section 12 will be updated in real-time to reflect any schedule slippage caused by materializing risks.
+Team member unavailable during testing week: QA lead will extend working hours to cover execution. Developers must document unit test results in advance so QA lead can proceed independently.
+Module not ready in time for integration testing: Available modules will be tested first. Incomplete modules marked as 'Blocked' in defect log and tested when available. No part of the testing process will be bypassed.
+Unclear or changing requirements: Requirements are frozen at the SRS in this document. Any change requires agreement from all 4 members and must be documented before implementation.
+Test environment unavailable: Localhost development environment will be used as fallback for all testing activities.
+Too many defects found late in the cycle: Critical defects only are prioritised. Minor defects accepted with documentation if deadline cannot move.
+APROVALS
+Project Sponsor
+Development Management
+EDI Project Manager
+RS Test Manager
+RS Development Team Manager
+Reassigned Sales
+Order Entry EDI Team Manager

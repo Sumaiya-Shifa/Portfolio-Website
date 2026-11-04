@@ -1,0 +1,692 @@
+Analyzing the Role of Key 
+Stakeholders in the July Uprising 2024 
+in Bangladesh: Actors and Factors 
+Approach 
+                   Sumaiya Fahmida Shifa 
+             ID: 23-50138-1    Section:C 
+BSc in Computer Science and Engineering (CSE)      
+American International University of Bangladesh  
+Abstract 
+The July Uprising of 2024 is examined as a pivotal moment 
+in Bangladesh’s democratic trajectory that ultimately 
+resulted in the collapse of the 16 -year Awami League 
+regime. Ongoing debates persist regarding the ownership of 
+the movement and the relative contributions of different 
+groups. Central to this discussion is the identification of 
+key actors and the factors that shaped their roles during the 
+uprising. This study analyzes the actors, driving f actors, 
+and interrelationships involved in the July Uprising of 2024 
+in Bangladesh using a mixed -method approach, including 
+literature reviews and convenience surveys (n = 87). 
+Guided by stakeholder theory, eleven key actors are 
+identified: the Awami Leagu e government; the Anti -
+Discrimination Students Movement; Bangladesh Student 
+League; YouTubers/bloggers; the general public; media; 
+international community/NGOs; opposition political parties 
+(BNP, Jamaat-e-Islami, etc.); law and security enforcement 
+agencies (RAB, Police, BGB, Bangladesh Army, etc.); the 
+Supreme Court; and university authorities. Findings 
+indicate that the Anti -Discrimination Students Movement 
+and the general public exhibited high power and interest, 
+whereas the Awami League government and u niversity 
+authorities retained significant power but demonstrated low 
+interest. Correlation analysis reveals a positive relationship 
+between the interests of the general public and student 
+protestors (r = 0.44), a moderate correlation between media 
+influence and government power (r = 0.25), and a negative 
+correlation between the power of law enforcement agencies 
+and student protestors (r = −0.25). The study underscores 
+the necessity of inclusive governance and sustained 
+political dialogue to address structu ral grievances and 
+strengthen democratic values. 
+Introduction 
+The July uprising, also known as the Bangladesh 2.0 
+movement, is a notable instance of  anti-discrimination and 
+pro-democracy protests that were primarily started by the 
+students of Dhaka University (Chughtai & Ali, 2024). The 
+movement‘s initial goal was to change the  quota-based 
+system from the government recruitment, especially in light 
+of the Supreme  Court‘s verdict to reinstate a 30% quota for 
+descendants of freedom fighters. T his ruling  overruled an 
+earlier government decision of cancelling all quota systems 
+from the  government job that was the result of the 2018 
+quota reform movement (Islam et. al., 2024).  Students felt 
+that their merit-based opportunities were becoming lim ited, 
+and this  reinstatement created a great deal of unhappiness 
+among them. Besides, 16 years of division  based on 
+political ideology fueled the sentiment of the people which 
+resulted into a  widespread protests by the students all over 
+the Bangladesh. After the violent clashes and  attacks, the 
+situation spiraled out of control, leading to the July 
+massacre, which took many  lives. In addition to using 
+firearms and sharp weapons, activities in that time included 
+the  shutdown of educational institutions , the mobilization 
+of the party activists and the law  enforcement agencies 
+against each -other. The government effectively cut off 
+Bangladesh  from international contacts by enacting a 
+nationwide shoot-at-sight curfew and a complete  blackout 
+of cell and i nternet connectivity in reaction to the growing 
+discontent (Roy, 2024).  As of August 2, there had been 
+over thousands of injuries and arrests, and 266 verified  
+deaths. UNICEF has recorded the deaths of at least 32 
+children during the riots (Mishra, 2024) . The government‘s 
+restrictions on hospitals‘ ability to communicate with the 
+media, the seizure of hospital security footage, and the 
+secret burial of numerous victims of gunshot wounds made 
+it more difficult to determine the precise death toll. Awami 
+League government claimed that other political groups had 
+appropriated the protests for their own purposes. Curfews 
+were enforced, but the movement continued and expanded 
+its demands, calling for responsibility for state violence, 
+banning the student politics , and the resignation of 
+important government figures. In the end, the widespread 
+violence against civilian s turned the student -led 
+demonstrations into a larger movement of non -cooperation, 
+which reflected a larger social revolt against the 
+government and as a result, ex -Prime Minister Sheikh 
+Hasina resigned and flew to India (Bangladesh: Prime 
+Minister Hasina resign, 2024).To date, much scholarly 
+attention has been devoted to analyzing the impacts and 
+historical context of the July uprising; however, our 
+research will focus specifically on the actors and relevant 
+factors involved in this movement. We aim to explore the 
+various actors, including government entities, student 
+organizations, anti-discrimination movement platform, and 
+international organizations or Non -Government 
+Organizations (NGO), etc. while examining their 
+interrelations and the dynamics of power and interests at 
+play. Initially, we will elucidate the significance of the 
+movement within the broader socio -political landscape, 
+followed by a com prehensive examination of its 
+background. This analysis will extend to understanding 
+how the initial nine -point agenda of the movement 
+coalesced into a singular focus, propelled by the concerted 
+efforts of diverse actors. Subsequently, we will delve into 
+the specific power structures and interests of each actor by 
+assessing how these factors influenced their actions and 
+decisions throughout the uprising. Finally, we will provide 
+strategic recommendations for political parties on 
+navigating complex social mo vements and addressing the 
+concerns of different actors effectively with the 
+understanding of the correlation coefficient (r) matrix of 
+different actors. 
+Methodology 
+A mixed -methods approach was adopted to examine the 
+actors involved in the July Uprising o f 2024 in Bangladesh, 
+integrating qualitative and quantitative techniques 
+(Bryman, 2012; Creswell & Plano Clark, 2011). An 
+extensive review of secondary literature was first 
+conducted to contextualize the uprising and identify key 
+actors. Subsequently, con venience surveys using a closed -
+ended questionnaire were administered to assess public 
+perceptions of the power and interest of 11 identified 
+actors, including the Awami League government, Anti -
+Discrimination Students Movement, Bangladesh Student 
+League, m edia, law enforcement agencies (RAB, Police, 
+BGB, etc.), YouTubers/bloggers, the general public, 
+international community/NGOs, opposition political parties 
+(BNP, Jamaat -e-Islami, etc.), the Supreme Court, and 
+university authorities. 
+Survey responses from 8 7 participants (n = 87) were 
+analyzed using Excel and SPSS to calculate mean power 
+and interest scores for each actor. The sample included 45 
+males and 42 females, comprising students, protesters, 
+teachers, and political activists. A stakeholder matrix was  
+constructed to classify actors into four categories based on 
+power and interest levels. In addition, a correlation matrix 
+analysis was conducted to examine the direction and 
+strength of relationships among actors. This 
+methodological approach enabled a st ructured assessment 
+of actor dynamics during the uprising. 
+Literature Review 
+The July Uprising of 2024 in Bangladesh has been widely 
+viewed as a collective response to prolonged political 
+repression, corruption, and human rights violations under 
+the Awami League government. The immediate catalyst 
+was the Supreme Court’s reinstatement of a quota system in 
+government employment favoring descendants of liberation 
+fighters, which was broadly perceived as discriminatory. 
+Rising youth unemployment, economic pressure, and 
+restricted access to merit -based opportunities intensified 
+dissatisfaction, particularly among students (Gupta, 2024). 
+Reports by the International Labour Organization indicated 
+increasing youth participation in the labor force alongside 
+limited employment opportunities, further exacerbating 
+grievances. Violent crackdowns by security forces escalated 
+tensions, transforming demands for quota reform into a 
+broader call for democracy, justice, and political 
+accountability, including the resignation of Prime Minister 
+Sheikh Hasina (Prakash, 2024).The uprising has been 
+analyzed through established social movement theories. 
+Relative Deprivation Theory (Gurr, 2011) explains the 
+mobilization as a response to the gap between expectations 
+of merit-based advancement and the reality of quota -based 
+exclusion. Resource Mobilization Theory  (McCarthy & 
+Zald, 1977) highlights the role of social media, university 
+networks, and organizational resources in enabling rapid 
+coordination and nationwide protest.State repression 
+theories further explain the escalation of the movement. 
+According to Til ly (1978), increased state violence often 
+intensifies resistance, a pattern reflected in the 
+transformation of student protests into a mass uprising 
+following police and Chhatra League violence. Davenport’s 
+theory of coercive state violence (2007) similarl y suggests 
+that tactics such as paramilitary deployment, internet 
+blackouts, and shoot -at-sight curfews may suppress dissent 
+temporarily but often provoke broader opposition.Political 
+Opportunity Theory (Tarrow, 1998) identifies the Supreme 
+Court ruling as  a critical opening for mobilization, while 
+Framing Theory (Snow & Benford, 1988) explains how the 
+quota issue was reframed as resistance to authoritarianism, 
+expanding support beyond students. International norm 
+dynamics theory (Finnemore & Sikkink, 1998)  further 
+contextualizes the movement, as condemnation by 
+international organizations increased external pressure on 
+the government. 
+Finally, theories of hybrid regimes and democratic 
+backsliding (Levitsky & Way, 2010) and Economic Protest 
+Theory (Kriesi, 1 995) situate the uprising within broader 
+patterns of authoritarian governance, economic grievance, 
+and mass mobilization. To systematically analyze actor 
+influence within this context, stakeholder matrix analysis is 
+applied to assess power –interest relatio nships among key 
+participants (Frooman, 1999). 
+Data Presentation 
+Context: Sixteen Years of Awami League Rule 
+The July Uprising of 2024 is widely regarded as the 
+outcome of prolonged political repression, economic 
+hardship, and democratic erosion during the  16-year rule of 
+the Awami League under Prime Minister Sheikh Hasina. 
+The period was marked by deep political polarization, 
+pervasive corruption, and a narrowing of democratic space, 
+which collectively generated widespread public discontent 
+(Rishi, 2024). Political control was reinforced through the 
+promotion of a “Freedom Fighters versus Others” narrative, 
+which framed opposition groups as anti -national and 
+intensified exclusion and mistrust within the political 
+system (Haque, 2024). Consequently, oppositi on parties—
+particularly the Bangladesh Nationalist Party (BNP) and 
+Jamaat-e-Islami—were systematically marginalized. 
+Democratic institutions were further weakened through 
+disputed national elections in 2014, 2018, and 2024, which 
+were characterized by alle gations of voter intimidation, 
+manipulation, and suppression, alongside repeated 
+opposition boycotts (Siddiqui & Paul, 2019). These 
+electoral practices contributed to widespread perceptions of 
+disenfranchisement and the collapse of electoral credibility. 
+At the same time, civic and political spaces were 
+increasingly constrained. Independent media, civil society 
+organizations, and dissenting voices were subjected to 
+censorship, harassment, and legal persecution, allowing 
+state authority to be consolidated wi th limited 
+accountability (The State of Media Freedom in Bangladesh, 
+2021). Although periods of economic growth were 
+recorded, structural economic problems —including 
+inequality, corruption, rising living costs, and post -
+pandemic pressures —persisted. High -profile governance 
+failures and corruption scandals further eroded public trust 
+(Taylor, 2016; Mustafa, 2024). 
+Youth dissatisfaction intensified amid limited employment 
+opportunities and restricted political participation. Despite 
+earlier political disengag ement, students emerged as 
+leading actors in 2024, mobilized primarily by opposition 
+to discriminatory job quotas favoring descendants of 
+liberation fighters. Ultimately, prolonged repression, 
+economic strain, and institutional decay converged to 
+produce t he July Uprising, representing a critical turning 
+point in Bangladesh’s political history, with its long -term 
+democratic outcomes remaining uncertain. 
+ 
+Discrimination in Politics and Society During the 
+Awami League Regime 
+From 2008 to 2024, Bangladesh’s political and social 
+environment was shaped by systemic favoritism and 
+exclusion under the Awami League government. Public -
+sector recruitment was widely perceived as politicized, 
+particularly through the civil service quota system that 
+reserved 30 percent of positions for descendants of 
+liberation fighters. Although justified as historical 
+recognition, the policy was criticized for privileging 
+political affiliation over merit and undermining institutional 
+credibility (Corea &  Erum, 2024). The marginalization of 
+qualified candidates contributed to widespread 
+dissatisfaction and fueled the quota reform movement led 
+primarily by students and young people.Discriminatory 
+practices were also reported in post -examination 
+recruitment processes, where successful Bangladesh Civil 
+Service candidates were denied appointments due to 
+politically influenced police verification procedures. In 
+parallel, dissent was suppressed through legal mechanisms 
+such as the Digital Security Act and the ICT  Act, which 
+were used to detain journalists, activists, and critics of the 
+government, fostering a climate of fear and restricting 
+freedom of expression (Almond, 2019).Public trust was 
+further eroded by pervasive corruption, particularly in the 
+banking sector, where large -scale embezzlement involving 
+individuals linked to the ruling party was reported. 
+Allegations of corruption within the Election Commission 
+also weakened confidence in democratic governance. 
+Collectively, political discrimination, repressio n of dissent, 
+and institutional corruption generated widespread 
+frustration and contributed to the mass protests of July –
+August 2024, marking a decisive rupture in Bangladesh’s 
+political landscape. 
+ 
+July Uprising 2024 and Its Aftermath 
+The July Uprising of 2024 in Bangladesh was the result of 
+prolonged political repression, economic exclusion, and 
+institutional corruption under the Awami League 
+government, which had ruled for more than 16 years. 
+Democratic norms were progressively weaken ed through 
+restrictions on press freedom, limitations on free 
+expression, and the use of law enforcement agencies to 
+suppress dissent. These practices generated widespread 
+resentment, particularly among young people who 
+experienced political marginalization and limited economic 
+opportunity.Despite sustained economic growth, 
+employment opportunities remained constrained, especially 
+for educated youth. Although Bangladesh was frequently 
+cited as a high -growth economy, the benefits were 
+unevenly distributed, l eaving an estimated 2.6 million 
+young people unemployed (Zaman, 2024). This disconnect 
+between economic performance and lived realities 
+intensified public dissatisfaction. Public trust was further 
+eroded by persistent allegations of corruption, reflected i n 
+Bangladesh’s low ranking in Transparency International’s 
+2023 Corruption Perception Index.The reinstatement of the 
+government job quota system served as the immediate 
+catalyst for mass mobilization. Under this system, 56 
+percent of public -sector positions were reserved, including 
+30 percent for descendants of liberation fighters (Ganguly, 
+2024). Although originally intended to address historical 
+inequalities, the policy was increasingly perceived as 
+discriminatory and incompatible with merit -based 
+recruitment. The High Court’s decision in June 2024 to 
+reinstate the quota system triggered widespread student 
+protests.Demonstrations began at Dhaka University on July 
+1, 2024, and rapidly expanded nationwide. Initial demands 
+centered on quota reform; however, t he movement 
+escalated following violent state responses, including 
+inflammatory rhetoric, the mobilization of party -affiliated 
+groups, and the use of force by security agencies. Student 
+deaths, notably that of Abu Sayeed in Rangpur, intensified 
+public outrage and transformed the protests into a broader 
+anti-authoritarian movement.As curfews were imposed and 
+communication networks disrupted, the Anti -
+Discrimination Students Movement expanded its demands 
+to include accountability for state violence, the bann ing of 
+the Bangladesh Chhatra League, and the resignation of 
+senior officials. The uprising ultimately evolved into a 
+nationwide non-cooperation movement, culminating in the 
+resignation of Prime Minister Sheikh Hasina. The events of 
+July 2024 underscored t he capacity of youth -led 
+mobilization to challenge entrenched political power and 
+reaffirmed the central importance of democratic 
+accountability and social justice. 
+ 
+Reform to Revolution: From Nine -Point to One -Point 
+Demand 
+The July Uprising of 2024 was led by the Anti -
+Discrimination Students Movement and initially focused on 
+reforming the government job quota system. The quota 
+policy was widely viewed as unfair and harmful to merit -
+based recruitment. Students demanded the ca ncellation of 
+the existing quota system and the introduction of limited 
+and fair quotas for marginalized groups.After the Supreme 
+Court reinstated a 30 percent quota for descendants of 
+liberation fighters, student protests spread rapidly across 
+universities. The movement escalated sharply when 
+protests were met with violence by law enforcement 
+agencies and the ruling party’s student wing, the 
+Bangladesh Chhatra League. Student deaths and injuries 
+marked a turning point and led to an expansion of 
+demands.A nine-point demand was later announced, calling 
+for a public apology from the Prime Minister, the 
+resignation of responsible ministers, punishment of police 
+officials involved in violence, the resignation of university 
+authorities, and a ban on the Bangladesh Chhatra League in 
+educational institutions. These demands shifted the 
+movement from quota reform to accountability for state 
+violence.As repression continued, the movement adopted a 
+non-cooperation strategy and consolidated its demands into 
+a single poin t: the resignation of Prime Minister Sheikh 
+Hasina and her cabinet. This shift marked the 
+transformation of the movement from reform -oriented 
+protest to a broader revolutionary struggle for democratic 
+accountability. 
+ 
+Opposition Parties (BNP, Jamaat-e-Islami, etc.) 
+The Bangladesh Nationalist Party (BNP) and Jamaat -e-
+Islami were indirectly involved in the July Uprising 
+following prolonged political repression under the Awami 
+League government. Over the previous 16 years, party 
+leaders and activists —particularly from Jamaat -e-Islami—
+were subjected to arrests, trials, executions, and systematic 
+suppression, which fostered long -term resentment and 
+organizational resilience.During the uprising, experienced 
+activists from both parties contributed to sustaining 
+mobilization, largely at the grassroots level. Individuals 
+associated with Islami Chhatra Shibir were involved in 
+coordination and organizational support behind the scenes. 
+BNP maintained a strategic distance by allowing student 
+groups to lead publicly, there by reducing the risk of 
+intensified state repression and preserving the movement’s 
+legitimacy.Although the uprising appeared student -led, the 
+background support, experience, and strategic restraint of 
+BNP and Jamaat -e-Islami played a significant role in 
+maintaining momentum and continuity. 
+ 
+Power and Interest Rating of Key Actors 
+ 
+The power–interest analysis (Figure 2) illustrates variations 
+in influence and engagement among key actors during the 
+July Uprising. The Awami League government displayed 
+relatively high power (3.10) but low interest (2.41), 
+indicating limited responsiveness to public and student 
+demands. Violent repression and dismissive rhetoric 
+reflected this disengagement and contributed to protest 
+escalation.In contrast, the Anti -Discrimination Students 
+Movement demonstrated the highest levels of power (4.31) 
+and interest (4.62), reflecting strong mobilization capacity, 
+nationwide coordination, and sustained commitment. The 
+general public also showed high power (3.90) and interest 
+(4.28), parti cularly as state violence intensified and the 
+movement evolved into a broader struggle for democratic 
+rights.Media actors recorded moderately high power (3.52) 
+and interest (3.79), though their influence was constrained 
+by censorship and intimidation. YouT ubers and bloggers 
+exhibited moderate power (2.86) and interest (3.38), 
+primarily through online narrative framing. The 
+international community and NGOs demonstrated  
+relatively high power (3.79) and interest (3.90), as external 
+pressure and human rights advocacy intensified. Opposition 
+political parties showed moderate power (2.93) and interest 
+(3.55), reflecting indirect and strategic involvement. Law 
+enforcement agencies exhibited moderate power (2.88) and 
+low interest (3.00), with their role foc used on enforcement 
+rather than engagement. A negative correlation between the 
+power of law enforcement agencies and student protestors 
+(r = −0.25) highlights the adversarial relationship between 
+the state and the movement. 
+ 
+Key Actors and Their Roles in the July Uprising 
+During the July Uprising of 2024, multiple actors with 
+varying levels of power and interest shaped the course of 
+events. The Awami League government, despite possessing 
+high institutional power, demonstrated low interest in 
+addressing prot est demands and relied primarily on 
+repression, deploying police, RAB, and BGB to suppress 
+demonstrations, which resulted in extensive casualties and 
+public outrage. The Bangladesh Student League, aligned 
+with the ruling party, opposed the movement through  
+violent actions against student protestors, triggering 
+nationwide student resistance. Law enforcement agencies 
+acted largely as instruments of state control, employing 
+force against protestors, while their actions intensified 
+public anger and contributed to the escalation of the 
+uprising. The Supreme Court played a pivotal role by 
+reinstating the controversial quota system, which was 
+widely perceived as undermining meritocracy and served as 
+a direct catalyst for mass mobilization. In contrast, the 
+Anti-Discrimination Students Movement emerged as the 
+central driving force, exhibiting high power and high 
+interest through coordinated nationwide protests led by 
+student and youth organizers. University authorities largely 
+remained disengaged or acted to contain protests, whereas 
+sections of university teachers actively supported student 
+safety and demands. The general public became a powerful 
+stakeholder as outrage over state violence led to widespread 
+participation beyond student circles. Media outlets played a 
+divided role, with independent channels amplifying protest 
+realities while state -aligned media minimized dissent. 
+YouTubers and bloggers, despite limited formal power, 
+significantly influenced public perception through digital 
+platforms. Finally, internati onal organizations and NGOs 
+applied external pressure by condemning human rights 
+violations, reinforcing the legitimacy of the movement and 
+increasing global scrutiny of state actions. 
+ 
+Opposition Parties (BNP, Jamaat-e-Islami, etc.) 
+The Bangladesh Nationa list Party (BNP) and Jamaat -e-
+Islami were indirectly involved in the July Uprising 
+following prolonged political repression under the Awami 
+League government. Over the previous 16 years, party 
+leaders and activists —particularly from Jamaat -e-Islami—
+were subjected to arrests, trials, executions, and systematic 
+suppression, which fostered long -term resentment and 
+organizational resilience.During the uprising, experienced 
+activists from both parties contributed to sustaining 
+mobilization, largely at the grassr oots level. Individuals 
+associated with Islami Chhatra Shibir were involved in 
+coordination and organizational support behind the scenes. 
+BNP maintained a strategic distance by allowing student 
+groups to lead publicly, thereby reducing the risk of 
+intensified state repression and preserving the movement’s 
+legitimacy. 
+Although the uprising appeared student -led, the 
+background support, experience, and strategic restraint of 
+BNP and Jamaat -e-Islami played a significant role in 
+maintaining momentum and continuity 
+Power and Interest Rating of the Key Actors 
+The actor analysis (figure: 2) provides a quantitative 
+framework for understanding how  these actors influenced 
+the events surrounding the protests. This analysis can offer  
+valuable insights into the dynamics of the uprising and  
+highlight the gaps  in engagement among different parties 
+involved in the struggle for justice and democratic 
+governance 
+Figure 2 
+Actor Mean Power and Mean Interest Rating 
+ 
+The power–interest analysis (Figure 2) illustrates variations 
+in influence and engagement among key actors during the 
+July Uprising. The Awami League government displayed 
+relatively high power (3.10) but low interest (2.41), 
+indicating limited responsivene ss to public and student 
+demands. Violent repression and dismissive rhetoric 
+reflected this disengagement and contributed to protest 
+escalation.In contrast, the Anti -Discrimination Students 
+Movement demonstrated the highest levels of power (4.31) 
+and interest (4.62), reflecting strong mobilization capacity, 
+nationwide coordination, and sustained commitment. The 
+general public also showed high power (3.90) and interest 
+(4.28), particularly as state violence intensified and the 
+movement evolved into a broader  struggle for democratic 
+rights.Media actors recorded moderately high power (3.52) 
+and interest (3.79), though their influence was constrained 
+by censorship and intimidation. YouTubers and bloggers 
+exhibited moderate power (2.86) and interest (3.38), 
+primarily through online narrative framing. The 
+international community and NGOs demonstrated 
+relatively high power (3.79) and interest (3.90), as external 
+pressure and human rights advocacy intensified.Opposition 
+political parties showed moderate power (2.93) and interest 
+(3.55), reflecting indirect and strategic involvement. Law 
+enforcement agencies exhibited moderate power (2.88) and 
+low interest (3.00), with their role focused on enforcement 
+rather than engagement. A negative correlation between the 
+power of law enforcement agencies and student protestors 
+(r = −0.25) highlights the adversarial relationship between 
+the state and the movement. 
+ 
+Clustering the Actors and Their Actions in July Uprising 
+The July Uprising of 2024 in Bangladesh was a 
+significant moment in  the country‘s political landscape, 
+marked by various actors whose ideologies and actions 
+either supported or opposed the movement. The 
+dynamics among these actors highlight the complexities 
+and tensions inherent in the struggle for de mocratic 
+rights and social justice. On one side, the Awami League 
+Government, its student wing (the Student League), 
+certain media outlets, law enforcement agencies, the 
+Supreme Court, and university authorities were aligned 
+against the protests, advocatin g for suppression. 
+Conversely, the Anti-discrimination Students Movement, 
+select Youtubers and bloggers, segments of the general 
+public, supportive media, international organizations, 
+opposition political parties, and the Bangladesh Army 
+emerged as allies of the movement. 
+ 
+University teachers’ networks 
+The Awami League government was centrally positioned 
+among actors opposing the uprising. The state response was 
+characterized by dismissive rhetoric and coercive 
+suppression, with law enforcement agencies dep loyed 
+against student protests. Violent confrontations, particularly 
+on July 16, resulted in injuries and fatalities and intensified 
+public outrage. The Bangladesh Student League, as the 
+ruling party’s student wing, was actively involved in 
+countering student protestors, often through confrontational 
+means. Law enforcement agencies, including the police and 
+RAB, were primarily engaged in enforcing government 
+directives, frequently through force rather than dialogue. 
+Reports of violence against protestors an d journalists 
+further reflected an increasingly repressive 
+environment.Institutional actors such as the Supreme Court 
+and university authorities were also perceived as aligned 
+against the movement. The Supreme Court’s decision to 
+reinstate the quota system acted as a key trigger for protests 
+and was widely interpreted as reinforcing state authority 
+over merit -based concerns. University authorities were 
+criticized for failing to protect students and for their limited 
+engagement during episodes of violence on  campuses.In 
+contrast, the Anti -Discrimination Students Movement 
+emerged as the core pro -uprising actor, leading 
+mobilization and sustaining protests nationwide. The 
+movement expanded rapidly following violent crackdowns 
+and student deaths, transforming in itial quota -related 
+demands into broader calls for accountability. Support from 
+segments of the general public increased as repression 
+intensified, reflecting shared grievances regarding 
+governance and democratic rights. Select YouTubers and 
+bloggers playe d a supportive role by disseminating 
+information and shaping public narratives, while supportive 
+media outlets amplified protest -related 
+coverage.International organizations and NGOs contributed 
+by condemning state violence and highlighting human 
+rights concerns, thereby increasing external pressure on the 
+government. Opposition political parties remained largely 
+in the background but were positioned as supportive 
+stakeholders. Notably, the Bangladesh Army, initially 
+neutral, was increasingly perceived as s ympathetic to 
+public sentiment in the later stages of the uprising.Overall, 
+the clustering reveals a clear division between state -aligned 
+institutions seeking to suppress dissent and a broad 
+coalition of students, citizens, and supportive actors 
+advocating for reform, accountability, and democratic 
+rights. 
+ 
+Discussion 
+This study was conducted to analyze the factors, key actors, 
+and interrelationships that shaped the July Uprising of 2024 
+in Bangladesh, with particular focus on the correlation 
+between actors’ power and interest. Eleven key 
+stakeholders were identified, i ncluding state institutions, 
+student groups, media, political actors, civil society, and 
+international organizations.High levels of power and 
+interest were observed among the Anti -Discrimination 
+Students Movement and the general public, enabling 
+sustained mobilization and broad societal support. In 
+contrast, the Awami League government and university 
+authorities retained considerable institutional power but 
+demonstrated limited interest in addressing protest 
+demands, indicating a clear institutional –public disconnect. 
+The Bangladesh Student League was aligned with the 
+government, while the media landscape remained divided 
+between state -aligned and independent reporting. External 
+pressure was applied by international organizations and 
+NGOs, while opposition p olitical parties remained 
+supportive but largely indirect. Law enforcement agencies 
+were primarily engaged in enforcing state directives, and 
+judicial actions by the Supreme Court became key points of 
+contention.Correlation analysis indicated a positive 
+relationship between public and student protestors’ interests 
+(r = 0.44), reflecting strong societal alignment. A moderate 
+correlation between media power and government authority 
+(r = 0.25) suggested state influence over information flows, 
+while a negative correlation between law enforcement 
+power and student protestors (r = −0.25) highlighted the 
+adversarial impact of state repression on grassroots 
+mobilization.Overall, the findings were found to be 
+consistent with social movement and state repression 
+theories, while also demonstrating how local political 
+dynamics shaped the trajectory of the July Uprising in 
+Bangladesh. 
+ 
+Conclusion 
+The July Uprising of 2024 is widely regarded as a defining 
+moment in Bangladesh’s pursuit of democracy, 
+accountability, and soc ial justice. Through an actor –factor 
+matrix analysis, eleven key actors were identified, 
+revealing varied levels of power and interest and 
+highlighting complex interactions among state institutions, 
+student movements, the public, media, and international 
+actors. Although the uprising was initially triggered by 
+quota-related grievances, it evolved into a broader 
+resistance against authoritarian practices and democratic 
+erosion as public support intensified.The findings 
+emphasize the necessity of constructive  political 
+engagement during crises. Repression was shown to 
+exacerbate conflict, whereas dialogue, transparency, and 
+responsiveness were identified as essential for addressing 
+grievances and restoring public trust. The importance of 
+inclusive governance, institutional accountability, and 
+independent oversight —particularly regarding law 
+enforcement conduct—was underscored.Overall, while the 
+July Uprising reflected deep -rooted societal discontent, it 
+also presented an opportunity for democratic renewal. By 
+fostering inclusive participation, protecting civic space, and 
+respecting diverse viewpoints, a more accountable and 
+responsive governance framework may be advanced in 
+Bangladesh. 
+ 
+References 
+Aljazeera. (2024, July 28). Bangladesh restores mobile 
+internet a fter 11 -day blackout to quell protests. 
+https://www.aljazeera.com/news/2024/7/28/bangladesh
+- restores-mobile-internet-after-11-day-blackout-to-
+quell-protests 
+Almond, K. (2019, April). This photographer spent 107 
+days in jail. But he won‘t be silenced. CNN. 
+https://edition.cnn.com/interactive/2019/04/world/shah
+idul-alam- cnnphotos/ 
+Bryman, A. (2012). Social research methods  (4th ed.). 
+Oxford University Press. 
+Chowdhury, S. R. H. (2024). The role of political 
+parties in Bangladesh‘s July revolution of 2024: 
+Insights from Sufi perspectives. International Journal 
+of Research and Innovation in Social Science (IJRISS). 
+https://dx.doi.org/10.47772/IJRISS.2024.8110166 
+Chugtai, A., & Ali, M. (2024, August 7). How 
+Bangladesh‘s ‗Gen Z‘ protests brought down PM Sheikh Hasina? Aljazeera. https://www.aljazeera.com/news/longform/2024/8/7/how-bangladeshs-gen-z- protests-brought-down-pm-sheikh-hasina 
+Corea, H., & Erum, N. (2024). What is happening 
+at the quota-reform protests in Bangladesh?
+ Amn
+esty
+ Inter
+national. 
+https://www.amnesty.org/en/latest/news/2024/07/what-
+is-happening-at-the-quota- reform-protests-in-
+bangladesh/ 
+Creswell, J. W., & Plano Clark, V. L. (2011). 
+Designing and conducting mixed methods research . 
+SAGE. 
+Davenport, C. (2007). State repression and the 
+domestic democratic peace. In 
+Cambridge University Press, 36–50. 
+https://doi.org/10.1017/CBO9780511510021 
+Finnemore, M., & Sikkink, K. (1998). International 
+norm dynamics and political change. International 
+Organization, 52(4), 887–917. [invalid URL removed] 
+Frooman, J. (1999). Stakeholder influence strategies. 
+The Academy of Management Review, 24(2), 191–205. 
+https://doi.org/10.2307/259074Ganguly, S. (2024, July 
+18). Explainer: Why are Bangladesh students 
+protesting against job quotas? Reuters. 
+https://www.reuters.com/world/asia-pacific/why-are-
+bangladesh-students-protesting- against-job-quotas-
+2024-07-18/ 
+Gupta, R. (2024). Political turmoil in Bangladesh: Hasina’ s 
+fall, the rise of an interim   government,  and  regional  
+dynamics.  Asia  Society  Policy  Ins
+titute 

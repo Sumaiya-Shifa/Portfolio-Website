@@ -1,0 +1,21 @@
+'use strict';
+document.getElementById('current-year').textContent = new Date().getFullYear();
+const menu = document.getElementById('mobile-toggle');
+const nav = document.getElementById('navbar');
+function closeMenu(){nav.classList.remove('active');menu.setAttribute('aria-expanded','false');}
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('active');menu.setAttribute('aria-expanded',String(open));});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
+const filters = document.querySelectorAll('.filter-btn');
+filters.forEach(button=>{button.setAttribute('aria-pressed',String(button.classList.contains('active')));button.addEventListener('click',()=>{filters.forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});document.querySelectorAll('.project-card').forEach(card=>{card.classList.toggle('hidden',button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter);});});});
+const detail=document.createElement('dialog');
+detail.setAttribute('aria-labelledby','detail-title');
+detail.innerHTML='<button class="dialog-close" aria-label="Close project details">✕</button><p class="eyebrow">PROJECT OVERVIEW</p><h2 id="detail-title"></h2><p class="detail-description"></p><div class="detail-tags project-tags"></div><p class="unavailable">Project source links have not been added yet.</p>';
+document.body.append(detail);
+detail.querySelector('button').addEventListener('click',()=>detail.close());
+detail.addEventListener('click',e=>{if(e.target===detail){const r=detail.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)detail.close();}});
+document.querySelectorAll('.project-card').forEach(card=>{card.querySelectorAll('a[href="#"]').forEach(link=>{if(link.classList.contains('btn-card-primary')){const button=document.createElement('button');button.className=link.className;button.textContent='＋ Project details';button.addEventListener('click',()=>{detail.querySelector('h2').textContent=card.querySelector('.project-title').textContent;detail.querySelector('.detail-description').textContent=card.querySelector('.project-description').textContent.trim();detail.querySelector('.detail-tags').replaceChildren(...Array.from(card.querySelector('.project-tags').children,c=>c.cloneNode(true)));const repository=card.querySelector('.repository-link');const sourceNote=detail.querySelector('.unavailable');sourceNote.replaceChildren();if(repository){const sourceLink=repository.cloneNode(true);sourceNote.append(sourceLink);}else{sourceNote.textContent='Project source links have not been added yet.';}detail.showModal();});link.replaceWith(button);}else{const note=document.createElement('span');note.className='unavailable';note.textContent='Source coming soon';link.replaceWith(note);}});});
+document.querySelectorAll('[data-copy]').forEach(button=>{button.setAttribute('aria-label','Copy email address');button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(button.dataset.copy);button.textContent='Copied';setTimeout(()=>{button.textContent='Copy';},2000);}catch{button.textContent='Select email to copy';}});});
+const observer = new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){nav.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.hash==='#'+entry.target.id));}});},{rootMargin:'-15% 0px -65% 0px'});
+document.querySelectorAll('main > section').forEach(section=>observer.observe(section));
+document.getElementById('contact-form').addEventListener('submit',event=>{event.preventDefault();const form=event.currentTarget;if(!form.reportValidity())return;const values=new FormData(form);const subject=encodeURIComponent('Portfolio enquiry from '+values.get('name'));const body=encodeURIComponent('Name: '+values.get('name')+'\nEmail: '+values.get('email')+'\n\n'+values.get('message'));window.location.href='mailto:famidasumaiya765@gmail.com?subject='+subject+'&body='+body;document.getElementById('form-status').textContent='Your email app will open with a draft. Send it there to complete your message.';});
